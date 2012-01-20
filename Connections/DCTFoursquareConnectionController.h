@@ -7,6 +7,7 @@
 //
 
 #import "DCTRESTConnectionController.h"
+#import "DCTConnectionQueue+Singleton.h"
 
 @interface DCTFoursquareConnectionController : DCTRESTConnectionController
 

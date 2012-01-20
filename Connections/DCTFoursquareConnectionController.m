@@ -37,7 +37,7 @@
 }
 
 + (NSArray *)queryProperties {
-	return [NSArray arrayWithObjects:@"client_id", @"client_secret", nil];
+	return [NSArray arrayWithObjects:@"client_id", @"client_secret", @"v", nil];
 }
 
 - (id)valueForConnectionKey:(id)key {
@@ -47,6 +47,9 @@
 	
 	if ([key isEqualToString:@"client_secret"])
 		return self.clientSecret;
+	
+	if ([key isEqualToString:@"v"])
+		return @"20120120";
 	
 	return [super valueForConnectionKey:key];	
 }

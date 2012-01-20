@@ -7,10 +7,11 @@
 //
 
 #import "DCTFoursquareVenuesSearchConnectionController.h"
+#import "DCTFoursquareVenue.h"
 
 @implementation DCTFoursquareVenuesSearchConnectionController
 @synthesize query;
-@synthesize location;
+@synthesize coordinate;
 
 - (NSString *)baseURLString {
 	return [NSString stringWithFormat:@"%@venues/search", [super baseURLString]];
@@ -23,9 +24,27 @@
 - (id)valueForConnectionKey:(id)key {
 	
 	if ([key isEqualToString:@"ll"])
-		return [NSString stringWithFormat:@"%@,%@", self.location.coordinate.latitude, self.location.coordinate.longitude];
+		return [NSString stringWithFormat:@"%f,%f", self.coordinate.latitude, self.coordinate.longitude];
 	
 	return [super valueForConnectionKey:key];
+}
+
+- (void)connectionDidReceiveDictionary:(NSDictionary *)dictionary {
+	
+	NSDictionary *response = [dictionary objectForKey:@"response"];
+	if (response != nil) {
+		NSArray *venues = [response objectForKey:@"venues"];
+		[self connectionDidReceiveArray:venues];
+		return;
+	}
+	
+	[super connectionDidReceiveDictionary:dictionary];
+}
+
+- (id)objectFromReceivedObject:(id)object insertIntoManagedObjectContext:(NSManagedObjectContext *)context {
+	
+	return [DCTFoursquareVenue dct_objectFromDictionary:object
+						 insertIntoManagedObjectContext:context];
 }
 
 @end

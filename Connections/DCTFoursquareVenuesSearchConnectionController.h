@@ -11,5 +11,5 @@
 
 @interface DCTFoursquareVenuesSearchConnectionController : DCTFoursquareConnectionController
 @property (nonatomic, copy) NSString *query;
-@property (nonatomic, copy) CLLocation *location;
+@property (nonatomic, assign) CLLocationCoordinate2D coordinate;
 @end
