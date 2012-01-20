@@ -15,6 +15,40 @@
 		24D91CD514C9961200B22297 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D91CD414C9961200B22297 /* main.m */; };
 		24D91CD914C9961200B22297 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D91CD814C9961200B22297 /* AppDelegate.m */; };
 		24D91CDC14C9961200B22297 /* DCTFoursquare.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 24D91CDA14C9961200B22297 /* DCTFoursquare.xcdatamodeld */; };
+		24D91D2B14C9972700B22297 /* DCTConnectionController+BlockHandlers.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D91CE614C9972700B22297 /* DCTConnectionController+BlockHandlers.m */; };
+		24D91D2C14C9972700B22297 /* DCTConnectionController+Delegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D91CE814C9972700B22297 /* DCTConnectionController+Delegate.m */; };
+		24D91D2D14C9972700B22297 /* DCTConnectionController+DownloadPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D91CEA14C9972700B22297 /* DCTConnectionController+DownloadPath.m */; };
+		24D91D2E14C9972700B22297 /* DCTConnectionController+Equality.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D91CEC14C9972700B22297 /* DCTConnectionController+Equality.m */; };
+		24D91D2F14C9972700B22297 /* DCTConnectionController+Notification.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D91CEE14C9972700B22297 /* DCTConnectionController+Notification.m */; };
+		24D91D3014C9972700B22297 /* DCTConnectionController+UsefulChecks.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D91CF014C9972700B22297 /* DCTConnectionController+UsefulChecks.m */; };
+		24D91D3114C9972700B22297 /* DCTConnectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D91CF214C9972700B22297 /* DCTConnectionController.m */; };
+		24D91D3214C9972700B22297 /* DCTConnectionControllerDisplay.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D91CF414C9972700B22297 /* DCTConnectionControllerDisplay.m */; };
+		24D91D3314C9972700B22297 /* DCTConnectionGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D91CF614C9972700B22297 /* DCTConnectionGroup.m */; };
+		24D91D3414C9972700B22297 /* DCTConnectionQueue+Deprecated.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D91CF814C9972700B22297 /* DCTConnectionQueue+Deprecated.m */; };
+		24D91D3514C9972700B22297 /* DCTConnectionQueue+Singleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D91CFA14C9972700B22297 /* DCTConnectionQueue+Singleton.m */; };
+		24D91D3614C9972700B22297 /* DCTConnectionQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D91CFC14C9972700B22297 /* DCTConnectionQueue.m */; };
+		24D91D3714C9972700B22297 /* DCTRESTConnectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D91CFE14C9972700B22297 /* DCTRESTConnectionController.m */; };
+		24D91D3814C9972700B22297 /* NSString+DCTURLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D91D0014C9972700B22297 /* NSString+DCTURLEncoding.m */; };
+		24D91D3914C9972700B22297 /* Readme.textile in Resources */ = {isa = PBXBuildFile; fileRef = 24D91D0114C9972700B22297 /* Readme.textile */; };
+		24D91D3A14C9972700B22297 /* NSManagedObjectContext+DCTAsynchronousDataFetching.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D91D0514C9972700B22297 /* NSManagedObjectContext+DCTAsynchronousDataFetching.m */; };
+		24D91D3B14C9972700B22297 /* NSManagedObjectContext+DCTAsynchronousTasks.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D91D0714C9972700B22297 /* NSManagedObjectContext+DCTAsynchronousTasks.m */; };
+		24D91D3C14C9972700B22297 /* NSAttributeDescription+DCTObjectCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D91D0A14C9972700B22297 /* NSAttributeDescription+DCTObjectCheck.m */; };
+		24D91D3D14C9972700B22297 /* NSDictionary+DCTKeyForObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D91D0C14C9972700B22297 /* NSDictionary+DCTKeyForObject.m */; };
+		24D91D3E14C9972700B22297 /* NSEntityDescription+DCTObjectCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D91D0E14C9972700B22297 /* NSEntityDescription+DCTObjectCheck.m */; };
+		24D91D3F14C9972700B22297 /* NSManagedObject+DCTAutomatedSetup.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D91D1014C9972700B22297 /* NSManagedObject+DCTAutomatedSetup.m */; };
+		24D91D4014C9972700B22297 /* NSManagedObject+DCTAutomatedSync.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D91D1214C9972700B22297 /* NSManagedObject+DCTAutomatedSync.m */; };
+		24D91D4114C9972700B22297 /* NSArray+DCTSortDescriptors.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D91D1414C9972700B22297 /* NSArray+DCTSortDescriptors.m */; };
+		24D91D4214C9972700B22297 /* NSFetchedResultsController+DCTExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D91D1614C9972700B22297 /* NSFetchedResultsController+DCTExtras.m */; };
+		24D91D4314C9972700B22297 /* NSFetchRequest+DCTExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D91D1814C9972700B22297 /* NSFetchRequest+DCTExtras.m */; };
+		24D91D4414C9972700B22297 /* NSManagedObject+DCTExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D91D1A14C9972700B22297 /* NSManagedObject+DCTExtras.m */; };
+		24D91D4514C9972700B22297 /* NSManagedObject+DCTOrdering.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D91D1C14C9972700B22297 /* NSManagedObject+DCTOrdering.m */; };
+		24D91D4614C9972700B22297 /* NSManagedObject+DCTRelatedObjects.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D91D1E14C9972700B22297 /* NSManagedObject+DCTRelatedObjects.m */; };
+		24D91D4714C9972700B22297 /* NSManagedObjectContext+DCTDataFetching.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D91D2014C9972700B22297 /* NSManagedObjectContext+DCTDataFetching.m */; };
+		24D91D4814C9972700B22297 /* NSManagedObjectContext+DCTExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D91D2214C9972700B22297 /* NSManagedObjectContext+DCTExtras.m */; };
+		24D91D4914C9972700B22297 /* NSPredicate+DCTExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D91D2414C9972700B22297 /* NSPredicate+DCTExtras.m */; };
+		24D91D4A14C9972700B22297 /* Readme.textile in Resources */ = {isa = PBXBuildFile; fileRef = 24D91D2514C9972700B22297 /* Readme.textile */; };
+		24D91D4B14C9972700B22297 /* DCTCoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D91D2814C9972700B22297 /* DCTCoreDataStack.m */; };
+		24D91D4C14C9972700B22297 /* NSManagedObjectContext+DCTCoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D91D2A14C9972700B22297 /* NSManagedObjectContext+DCTCoreDataStack.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +64,73 @@
 		24D91CD714C9961200B22297 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		24D91CD814C9961200B22297 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		24D91CDB14C9961200B22297 /* DCTFoursquare.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DCTFoursquare.xcdatamodel; sourceTree = "<group>"; };
+		24D91CE414C9972700B22297 /* dct_weak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dct_weak.h; sourceTree = "<group>"; };
+		24D91CE514C9972700B22297 /* DCTConnectionController+BlockHandlers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DCTConnectionController+BlockHandlers.h"; sourceTree = "<group>"; };
+		24D91CE614C9972700B22297 /* DCTConnectionController+BlockHandlers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DCTConnectionController+BlockHandlers.m"; sourceTree = "<group>"; };
+		24D91CE714C9972700B22297 /* DCTConnectionController+Delegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DCTConnectionController+Delegate.h"; sourceTree = "<group>"; };
+		24D91CE814C9972700B22297 /* DCTConnectionController+Delegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DCTConnectionController+Delegate.m"; sourceTree = "<group>"; };
+		24D91CE914C9972700B22297 /* DCTConnectionController+DownloadPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DCTConnectionController+DownloadPath.h"; sourceTree = "<group>"; };
+		24D91CEA14C9972700B22297 /* DCTConnectionController+DownloadPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DCTConnectionController+DownloadPath.m"; sourceTree = "<group>"; };
+		24D91CEB14C9972700B22297 /* DCTConnectionController+Equality.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DCTConnectionController+Equality.h"; sourceTree = "<group>"; };
+		24D91CEC14C9972700B22297 /* DCTConnectionController+Equality.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DCTConnectionController+Equality.m"; sourceTree = "<group>"; };
+		24D91CED14C9972700B22297 /* DCTConnectionController+Notification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DCTConnectionController+Notification.h"; sourceTree = "<group>"; };
+		24D91CEE14C9972700B22297 /* DCTConnectionController+Notification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DCTConnectionController+Notification.m"; sourceTree = "<group>"; };
+		24D91CEF14C9972700B22297 /* DCTConnectionController+UsefulChecks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DCTConnectionController+UsefulChecks.h"; sourceTree = "<group>"; };
+		24D91CF014C9972700B22297 /* DCTConnectionController+UsefulChecks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DCTConnectionController+UsefulChecks.m"; sourceTree = "<group>"; };
+		24D91CF114C9972700B22297 /* DCTConnectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTConnectionController.h; sourceTree = "<group>"; };
+		24D91CF214C9972700B22297 /* DCTConnectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCTConnectionController.m; sourceTree = "<group>"; };
+		24D91CF314C9972700B22297 /* DCTConnectionControllerDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTConnectionControllerDisplay.h; sourceTree = "<group>"; };
+		24D91CF414C9972700B22297 /* DCTConnectionControllerDisplay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCTConnectionControllerDisplay.m; sourceTree = "<group>"; };
+		24D91CF514C9972700B22297 /* DCTConnectionGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTConnectionGroup.h; sourceTree = "<group>"; };
+		24D91CF614C9972700B22297 /* DCTConnectionGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCTConnectionGroup.m; sourceTree = "<group>"; };
+		24D91CF714C9972700B22297 /* DCTConnectionQueue+Deprecated.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DCTConnectionQueue+Deprecated.h"; sourceTree = "<group>"; };
+		24D91CF814C9972700B22297 /* DCTConnectionQueue+Deprecated.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DCTConnectionQueue+Deprecated.m"; sourceTree = "<group>"; };
+		24D91CF914C9972700B22297 /* DCTConnectionQueue+Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DCTConnectionQueue+Singleton.h"; sourceTree = "<group>"; };
+		24D91CFA14C9972700B22297 /* DCTConnectionQueue+Singleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DCTConnectionQueue+Singleton.m"; sourceTree = "<group>"; };
+		24D91CFB14C9972700B22297 /* DCTConnectionQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTConnectionQueue.h; sourceTree = "<group>"; };
+		24D91CFC14C9972700B22297 /* DCTConnectionQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCTConnectionQueue.m; sourceTree = "<group>"; };
+		24D91CFD14C9972700B22297 /* DCTRESTConnectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTRESTConnectionController.h; sourceTree = "<group>"; };
+		24D91CFE14C9972700B22297 /* DCTRESTConnectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCTRESTConnectionController.m; sourceTree = "<group>"; };
+		24D91CFF14C9972700B22297 /* NSString+DCTURLEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DCTURLEncoding.h"; sourceTree = "<group>"; };
+		24D91D0014C9972700B22297 /* NSString+DCTURLEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DCTURLEncoding.m"; sourceTree = "<group>"; };
+		24D91D0114C9972700B22297 /* Readme.textile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Readme.textile; sourceTree = "<group>"; };
+		24D91D0414C9972700B22297 /* NSManagedObjectContext+DCTAsynchronousDataFetching.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObjectContext+DCTAsynchronousDataFetching.h"; sourceTree = "<group>"; };
+		24D91D0514C9972700B22297 /* NSManagedObjectContext+DCTAsynchronousDataFetching.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObjectContext+DCTAsynchronousDataFetching.m"; sourceTree = "<group>"; };
+		24D91D0614C9972700B22297 /* NSManagedObjectContext+DCTAsynchronousTasks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObjectContext+DCTAsynchronousTasks.h"; sourceTree = "<group>"; };
+		24D91D0714C9972700B22297 /* NSManagedObjectContext+DCTAsynchronousTasks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObjectContext+DCTAsynchronousTasks.m"; sourceTree = "<group>"; };
+		24D91D0914C9972700B22297 /* NSAttributeDescription+DCTObjectCheck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributeDescription+DCTObjectCheck.h"; sourceTree = "<group>"; };
+		24D91D0A14C9972700B22297 /* NSAttributeDescription+DCTObjectCheck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributeDescription+DCTObjectCheck.m"; sourceTree = "<group>"; };
+		24D91D0B14C9972700B22297 /* NSDictionary+DCTKeyForObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+DCTKeyForObject.h"; sourceTree = "<group>"; };
+		24D91D0C14C9972700B22297 /* NSDictionary+DCTKeyForObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+DCTKeyForObject.m"; sourceTree = "<group>"; };
+		24D91D0D14C9972700B22297 /* NSEntityDescription+DCTObjectCheck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSEntityDescription+DCTObjectCheck.h"; sourceTree = "<group>"; };
+		24D91D0E14C9972700B22297 /* NSEntityDescription+DCTObjectCheck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSEntityDescription+DCTObjectCheck.m"; sourceTree = "<group>"; };
+		24D91D0F14C9972700B22297 /* NSManagedObject+DCTAutomatedSetup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObject+DCTAutomatedSetup.h"; sourceTree = "<group>"; };
+		24D91D1014C9972700B22297 /* NSManagedObject+DCTAutomatedSetup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObject+DCTAutomatedSetup.m"; sourceTree = "<group>"; };
+		24D91D1114C9972700B22297 /* NSManagedObject+DCTAutomatedSync.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObject+DCTAutomatedSync.h"; sourceTree = "<group>"; };
+		24D91D1214C9972700B22297 /* NSManagedObject+DCTAutomatedSync.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObject+DCTAutomatedSync.m"; sourceTree = "<group>"; };
+		24D91D1314C9972700B22297 /* NSArray+DCTSortDescriptors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+DCTSortDescriptors.h"; sourceTree = "<group>"; };
+		24D91D1414C9972700B22297 /* NSArray+DCTSortDescriptors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+DCTSortDescriptors.m"; sourceTree = "<group>"; };
+		24D91D1514C9972700B22297 /* NSFetchedResultsController+DCTExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFetchedResultsController+DCTExtras.h"; sourceTree = "<group>"; };
+		24D91D1614C9972700B22297 /* NSFetchedResultsController+DCTExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFetchedResultsController+DCTExtras.m"; sourceTree = "<group>"; };
+		24D91D1714C9972700B22297 /* NSFetchRequest+DCTExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFetchRequest+DCTExtras.h"; sourceTree = "<group>"; };
+		24D91D1814C9972700B22297 /* NSFetchRequest+DCTExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFetchRequest+DCTExtras.m"; sourceTree = "<group>"; };
+		24D91D1914C9972700B22297 /* NSManagedObject+DCTExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObject+DCTExtras.h"; sourceTree = "<group>"; };
+		24D91D1A14C9972700B22297 /* NSManagedObject+DCTExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObject+DCTExtras.m"; sourceTree = "<group>"; };
+		24D91D1B14C9972700B22297 /* NSManagedObject+DCTOrdering.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObject+DCTOrdering.h"; sourceTree = "<group>"; };
+		24D91D1C14C9972700B22297 /* NSManagedObject+DCTOrdering.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObject+DCTOrdering.m"; sourceTree = "<group>"; };
+		24D91D1D14C9972700B22297 /* NSManagedObject+DCTRelatedObjects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObject+DCTRelatedObjects.h"; sourceTree = "<group>"; };
+		24D91D1E14C9972700B22297 /* NSManagedObject+DCTRelatedObjects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObject+DCTRelatedObjects.m"; sourceTree = "<group>"; };
+		24D91D1F14C9972700B22297 /* NSManagedObjectContext+DCTDataFetching.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObjectContext+DCTDataFetching.h"; sourceTree = "<group>"; };
+		24D91D2014C9972700B22297 /* NSManagedObjectContext+DCTDataFetching.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObjectContext+DCTDataFetching.m"; sourceTree = "<group>"; };
+		24D91D2114C9972700B22297 /* NSManagedObjectContext+DCTExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObjectContext+DCTExtras.h"; sourceTree = "<group>"; };
+		24D91D2214C9972700B22297 /* NSManagedObjectContext+DCTExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObjectContext+DCTExtras.m"; sourceTree = "<group>"; };
+		24D91D2314C9972700B22297 /* NSPredicate+DCTExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSPredicate+DCTExtras.h"; sourceTree = "<group>"; };
+		24D91D2414C9972700B22297 /* NSPredicate+DCTExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSPredicate+DCTExtras.m"; sourceTree = "<group>"; };
+		24D91D2514C9972700B22297 /* Readme.textile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Readme.textile; sourceTree = "<group>"; };
+		24D91D2714C9972700B22297 /* DCTCoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTCoreDataStack.h; sourceTree = "<group>"; };
+		24D91D2814C9972700B22297 /* DCTCoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCTCoreDataStack.m; sourceTree = "<group>"; };
+		24D91D2914C9972700B22297 /* NSManagedObjectContext+DCTCoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObjectContext+DCTCoreDataStack.h"; sourceTree = "<group>"; };
+		24D91D2A14C9972700B22297 /* NSManagedObjectContext+DCTCoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObjectContext+DCTCoreDataStack.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +151,10 @@
 		24D91CB714C9961200B22297 = {
 			isa = PBXGroup;
 			children = (
+				24D91CE314C9972700B22297 /* DCTConnectionController */,
+				24D91D0214C9972700B22297 /* DCTCoreData */,
+				24D91D2614C9972700B22297 /* DCTCoreDataStack */,
+				24D91CE214C996AD00B22297 /* DCTFoursquare */,
 				24D91CCE14C9961200B22297 /* DCTFoursquare Demo */,
 				24D91CC514C9961200B22297 /* Frameworks */,
 				24D91CC314C9961200B22297 /* Products */,
@@ -95,6 +200,117 @@
 				24D91CD614C9961200B22297 /* DCTFoursquare-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		24D91CE214C996AD00B22297 /* DCTFoursquare */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DCTFoursquare;
+			sourceTree = "<group>";
+		};
+		24D91CE314C9972700B22297 /* DCTConnectionController */ = {
+			isa = PBXGroup;
+			children = (
+				24D91CE414C9972700B22297 /* dct_weak.h */,
+				24D91CE514C9972700B22297 /* DCTConnectionController+BlockHandlers.h */,
+				24D91CE614C9972700B22297 /* DCTConnectionController+BlockHandlers.m */,
+				24D91CE714C9972700B22297 /* DCTConnectionController+Delegate.h */,
+				24D91CE814C9972700B22297 /* DCTConnectionController+Delegate.m */,
+				24D91CE914C9972700B22297 /* DCTConnectionController+DownloadPath.h */,
+				24D91CEA14C9972700B22297 /* DCTConnectionController+DownloadPath.m */,
+				24D91CEB14C9972700B22297 /* DCTConnectionController+Equality.h */,
+				24D91CEC14C9972700B22297 /* DCTConnectionController+Equality.m */,
+				24D91CED14C9972700B22297 /* DCTConnectionController+Notification.h */,
+				24D91CEE14C9972700B22297 /* DCTConnectionController+Notification.m */,
+				24D91CEF14C9972700B22297 /* DCTConnectionController+UsefulChecks.h */,
+				24D91CF014C9972700B22297 /* DCTConnectionController+UsefulChecks.m */,
+				24D91CF114C9972700B22297 /* DCTConnectionController.h */,
+				24D91CF214C9972700B22297 /* DCTConnectionController.m */,
+				24D91CF314C9972700B22297 /* DCTConnectionControllerDisplay.h */,
+				24D91CF414C9972700B22297 /* DCTConnectionControllerDisplay.m */,
+				24D91CF514C9972700B22297 /* DCTConnectionGroup.h */,
+				24D91CF614C9972700B22297 /* DCTConnectionGroup.m */,
+				24D91CF714C9972700B22297 /* DCTConnectionQueue+Deprecated.h */,
+				24D91CF814C9972700B22297 /* DCTConnectionQueue+Deprecated.m */,
+				24D91CF914C9972700B22297 /* DCTConnectionQueue+Singleton.h */,
+				24D91CFA14C9972700B22297 /* DCTConnectionQueue+Singleton.m */,
+				24D91CFB14C9972700B22297 /* DCTConnectionQueue.h */,
+				24D91CFC14C9972700B22297 /* DCTConnectionQueue.m */,
+				24D91CFD14C9972700B22297 /* DCTRESTConnectionController.h */,
+				24D91CFE14C9972700B22297 /* DCTRESTConnectionController.m */,
+				24D91CFF14C9972700B22297 /* NSString+DCTURLEncoding.h */,
+				24D91D0014C9972700B22297 /* NSString+DCTURLEncoding.m */,
+				24D91D0114C9972700B22297 /* Readme.textile */,
+			);
+			path = DCTConnectionController;
+			sourceTree = "<group>";
+		};
+		24D91D0214C9972700B22297 /* DCTCoreData */ = {
+			isa = PBXGroup;
+			children = (
+				24D91D0314C9972700B22297 /* Asynchronous */,
+				24D91D0814C9972700B22297 /* Automated Setup */,
+				24D91D1314C9972700B22297 /* NSArray+DCTSortDescriptors.h */,
+				24D91D1414C9972700B22297 /* NSArray+DCTSortDescriptors.m */,
+				24D91D1514C9972700B22297 /* NSFetchedResultsController+DCTExtras.h */,
+				24D91D1614C9972700B22297 /* NSFetchedResultsController+DCTExtras.m */,
+				24D91D1714C9972700B22297 /* NSFetchRequest+DCTExtras.h */,
+				24D91D1814C9972700B22297 /* NSFetchRequest+DCTExtras.m */,
+				24D91D1914C9972700B22297 /* NSManagedObject+DCTExtras.h */,
+				24D91D1A14C9972700B22297 /* NSManagedObject+DCTExtras.m */,
+				24D91D1B14C9972700B22297 /* NSManagedObject+DCTOrdering.h */,
+				24D91D1C14C9972700B22297 /* NSManagedObject+DCTOrdering.m */,
+				24D91D1D14C9972700B22297 /* NSManagedObject+DCTRelatedObjects.h */,
+				24D91D1E14C9972700B22297 /* NSManagedObject+DCTRelatedObjects.m */,
+				24D91D1F14C9972700B22297 /* NSManagedObjectContext+DCTDataFetching.h */,
+				24D91D2014C9972700B22297 /* NSManagedObjectContext+DCTDataFetching.m */,
+				24D91D2114C9972700B22297 /* NSManagedObjectContext+DCTExtras.h */,
+				24D91D2214C9972700B22297 /* NSManagedObjectContext+DCTExtras.m */,
+				24D91D2314C9972700B22297 /* NSPredicate+DCTExtras.h */,
+				24D91D2414C9972700B22297 /* NSPredicate+DCTExtras.m */,
+				24D91D2514C9972700B22297 /* Readme.textile */,
+			);
+			path = DCTCoreData;
+			sourceTree = "<group>";
+		};
+		24D91D0314C9972700B22297 /* Asynchronous */ = {
+			isa = PBXGroup;
+			children = (
+				24D91D0414C9972700B22297 /* NSManagedObjectContext+DCTAsynchronousDataFetching.h */,
+				24D91D0514C9972700B22297 /* NSManagedObjectContext+DCTAsynchronousDataFetching.m */,
+				24D91D0614C9972700B22297 /* NSManagedObjectContext+DCTAsynchronousTasks.h */,
+				24D91D0714C9972700B22297 /* NSManagedObjectContext+DCTAsynchronousTasks.m */,
+			);
+			path = Asynchronous;
+			sourceTree = "<group>";
+		};
+		24D91D0814C9972700B22297 /* Automated Setup */ = {
+			isa = PBXGroup;
+			children = (
+				24D91D0914C9972700B22297 /* NSAttributeDescription+DCTObjectCheck.h */,
+				24D91D0A14C9972700B22297 /* NSAttributeDescription+DCTObjectCheck.m */,
+				24D91D0B14C9972700B22297 /* NSDictionary+DCTKeyForObject.h */,
+				24D91D0C14C9972700B22297 /* NSDictionary+DCTKeyForObject.m */,
+				24D91D0D14C9972700B22297 /* NSEntityDescription+DCTObjectCheck.h */,
+				24D91D0E14C9972700B22297 /* NSEntityDescription+DCTObjectCheck.m */,
+				24D91D0F14C9972700B22297 /* NSManagedObject+DCTAutomatedSetup.h */,
+				24D91D1014C9972700B22297 /* NSManagedObject+DCTAutomatedSetup.m */,
+				24D91D1114C9972700B22297 /* NSManagedObject+DCTAutomatedSync.h */,
+				24D91D1214C9972700B22297 /* NSManagedObject+DCTAutomatedSync.m */,
+			);
+			path = "Automated Setup";
+			sourceTree = "<group>";
+		};
+		24D91D2614C9972700B22297 /* DCTCoreDataStack */ = {
+			isa = PBXGroup;
+			children = (
+				24D91D2714C9972700B22297 /* DCTCoreDataStack.h */,
+				24D91D2814C9972700B22297 /* DCTCoreDataStack.m */,
+				24D91D2914C9972700B22297 /* NSManagedObjectContext+DCTCoreDataStack.h */,
+				24D91D2A14C9972700B22297 /* NSManagedObjectContext+DCTCoreDataStack.m */,
+			);
+			path = DCTCoreDataStack;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,6 +365,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				24D91CD314C9961200B22297 /* InfoPlist.strings in Resources */,
+				24D91D3914C9972700B22297 /* Readme.textile in Resources */,
+				24D91D4A14C9972700B22297 /* Readme.textile in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,6 +380,38 @@
 				24D91CD514C9961200B22297 /* main.m in Sources */,
 				24D91CD914C9961200B22297 /* AppDelegate.m in Sources */,
 				24D91CDC14C9961200B22297 /* DCTFoursquare.xcdatamodeld in Sources */,
+				24D91D2B14C9972700B22297 /* DCTConnectionController+BlockHandlers.m in Sources */,
+				24D91D2C14C9972700B22297 /* DCTConnectionController+Delegate.m in Sources */,
+				24D91D2D14C9972700B22297 /* DCTConnectionController+DownloadPath.m in Sources */,
+				24D91D2E14C9972700B22297 /* DCTConnectionController+Equality.m in Sources */,
+				24D91D2F14C9972700B22297 /* DCTConnectionController+Notification.m in Sources */,
+				24D91D3014C9972700B22297 /* DCTConnectionController+UsefulChecks.m in Sources */,
+				24D91D3114C9972700B22297 /* DCTConnectionController.m in Sources */,
+				24D91D3214C9972700B22297 /* DCTConnectionControllerDisplay.m in Sources */,
+				24D91D3314C9972700B22297 /* DCTConnectionGroup.m in Sources */,
+				24D91D3414C9972700B22297 /* DCTConnectionQueue+Deprecated.m in Sources */,
+				24D91D3514C9972700B22297 /* DCTConnectionQueue+Singleton.m in Sources */,
+				24D91D3614C9972700B22297 /* DCTConnectionQueue.m in Sources */,
+				24D91D3714C9972700B22297 /* DCTRESTConnectionController.m in Sources */,
+				24D91D3814C9972700B22297 /* NSString+DCTURLEncoding.m in Sources */,
+				24D91D3A14C9972700B22297 /* NSManagedObjectContext+DCTAsynchronousDataFetching.m in Sources */,
+				24D91D3B14C9972700B22297 /* NSManagedObjectContext+DCTAsynchronousTasks.m in Sources */,
+				24D91D3C14C9972700B22297 /* NSAttributeDescription+DCTObjectCheck.m in Sources */,
+				24D91D3D14C9972700B22297 /* NSDictionary+DCTKeyForObject.m in Sources */,
+				24D91D3E14C9972700B22297 /* NSEntityDescription+DCTObjectCheck.m in Sources */,
+				24D91D3F14C9972700B22297 /* NSManagedObject+DCTAutomatedSetup.m in Sources */,
+				24D91D4014C9972700B22297 /* NSManagedObject+DCTAutomatedSync.m in Sources */,
+				24D91D4114C9972700B22297 /* NSArray+DCTSortDescriptors.m in Sources */,
+				24D91D4214C9972700B22297 /* NSFetchedResultsController+DCTExtras.m in Sources */,
+				24D91D4314C9972700B22297 /* NSFetchRequest+DCTExtras.m in Sources */,
+				24D91D4414C9972700B22297 /* NSManagedObject+DCTExtras.m in Sources */,
+				24D91D4514C9972700B22297 /* NSManagedObject+DCTOrdering.m in Sources */,
+				24D91D4614C9972700B22297 /* NSManagedObject+DCTRelatedObjects.m in Sources */,
+				24D91D4714C9972700B22297 /* NSManagedObjectContext+DCTDataFetching.m in Sources */,
+				24D91D4814C9972700B22297 /* NSManagedObjectContext+DCTExtras.m in Sources */,
+				24D91D4914C9972700B22297 /* NSPredicate+DCTExtras.m in Sources */,
+				24D91D4B14C9972700B22297 /* DCTCoreDataStack.m in Sources */,
+				24D91D4C14C9972700B22297 /* NSManagedObjectContext+DCTCoreDataStack.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

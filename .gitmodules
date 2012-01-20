@@ -1,0 +1,9 @@
+[submodule "DCTConnectionController"]
+	path = DCTConnectionController
+	url = git://github.com/danielctull/DCTConnectionController.git
+[submodule "DCTCoreData"]
+	path = DCTCoreData
+	url = git://github.com/danielctull/DCTCoreData.git
+[submodule "DCTCoreDataStack"]
+	path = DCTCoreDataStack
+	url = git://github.com/danielctull/DCTCoreDataStack.git
