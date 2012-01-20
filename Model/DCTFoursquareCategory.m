@@ -3,6 +3,23 @@
 
 @implementation DCTFoursquareCategory
 
++ (NSArray *)dct_uniqueKeys {
+	return [NSArray arrayWithObject:DCTFoursquareCategoryAttributes.categoryID];
+}
+
++ (NSDictionary *)dct_mappingFromRemoteNamesToLocalNames {
+	
+	static NSDictionary *dct_mappingFromRemoteNamesToLocalNames = nil;
+	static dispatch_once_t dct_mappingFromRemoteNamesToLocalNamesToken;
+	dispatch_once(&dct_mappingFromRemoteNamesToLocalNamesToken, ^{
+		dct_mappingFromRemoteNamesToLocalNames = [[NSDictionary alloc] initWithObjectsAndKeys:
+												  DCTFoursquareCategoryAttributes.categoryID, @"id",
+												  nil];
+	});
+	
+	return dct_mappingFromRemoteNamesToLocalNames;
+}
+
 - (BOOL)dct_setSerializedValue:(id)value forKey:(NSString *)key {
 	
 	if ([key isEqualToString:@"icon"]) {

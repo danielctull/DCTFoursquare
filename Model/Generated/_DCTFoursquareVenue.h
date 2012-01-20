@@ -10,7 +10,7 @@ extern const struct DCTFoursquareVenueAttributes {
 } DCTFoursquareVenueAttributes;
 
 extern const struct DCTFoursquareVenueRelationships {
-	__unsafe_unretained NSString *category;
+	__unsafe_unretained NSString *categories;
 	__unsafe_unretained NSString *indexes;
 	__unsafe_unretained NSString *location;
 } DCTFoursquareVenueRelationships;
@@ -54,9 +54,9 @@ extern const struct DCTFoursquareVenueFetchedProperties {
 
 
 
-@property (nonatomic, strong) DCTFoursquareCategory* category;
+@property (nonatomic, strong) NSSet* categories;
 
-//- (BOOL)validateCategory:(id*)value_ error:(NSError**)error_;
+- (NSMutableSet*)categoriesSet;
 
 
 
@@ -78,6 +78,11 @@ extern const struct DCTFoursquareVenueFetchedProperties {
 @end
 
 @interface _DCTFoursquareVenue (CoreDataGeneratedAccessors)
+
+- (void)addCategories:(NSSet*)value_;
+- (void)removeCategories:(NSSet*)value_;
+- (void)addCategoriesObject:(DCTFoursquareCategory*)value_;
+- (void)removeCategoriesObject:(DCTFoursquareCategory*)value_;
 
 - (void)addIndexes:(NSSet*)value_;
 - (void)removeIndexes:(NSSet*)value_;
@@ -102,8 +107,8 @@ extern const struct DCTFoursquareVenueFetchedProperties {
 
 
 
-- (DCTFoursquareCategory*)primitiveCategory;
-- (void)setPrimitiveCategory:(DCTFoursquareCategory*)value;
+- (NSMutableSet*)primitiveCategories;
+- (void)setPrimitiveCategories:(NSMutableSet*)value;
 
 
 

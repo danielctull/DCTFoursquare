@@ -2,6 +2,8 @@
 
 @implementation DCTFoursquareLocation
 
-// Custom logic goes here.
++ (NSArray *)dct_uniqueKeys {
+	return [NSArray arrayWithObjects:DCTFoursquareLocationAttributes.lat, DCTFoursquareLocationAttributes.lng, nil];
+}
 
 @end

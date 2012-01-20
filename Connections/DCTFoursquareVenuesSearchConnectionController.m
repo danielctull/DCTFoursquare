@@ -31,6 +31,8 @@
 
 - (void)connectionDidReceiveDictionary:(NSDictionary *)dictionary {
 	
+	NSLog(@"%@:%@ %@", self, NSStringFromSelector(_cmd), dictionary);
+	
 	NSDictionary *response = [dictionary objectForKey:@"response"];
 	if (response != nil) {
 		NSArray *venues = [response objectForKey:@"venues"];
@@ -42,9 +44,7 @@
 }
 
 - (id)objectFromReceivedObject:(id)object insertIntoManagedObjectContext:(NSManagedObjectContext *)context {
-	
-	return [DCTFoursquareVenue dct_objectFromDictionary:object
-						 insertIntoManagedObjectContext:context];
+	return [DCTFoursquareVenue dct_objectFromDictionary:object insertIntoManagedObjectContext:context];
 }
 
 @end

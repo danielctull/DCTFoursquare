@@ -139,9 +139,9 @@
 			[self handleReturnedObjects:objects inManagedObjectContext:childContext];
 		
 		[childContext dct_saveWithCompletionHandler:^(BOOL success, NSError *error) {
-			[self.managedObjectContext dct_performWithObjectIDs:objectIDs block:^(NSArray *objects) {
+			[self.managedObjectContext dct_performWithObjectIDs:objectIDs block:^(NSArray *returnedObjects) {
 				[self.managedObjectContext dct_saveWithCompletionHandler:^(BOOL success, NSError *error) {
-					self.returnedObject = objects;
+					self.returnedObject = returnedObjects;
 					[self connectionDidFinishLoading];
 				}];
 			}];
