@@ -34,7 +34,6 @@
 	NSDictionary *response = [dictionary objectForKey:@"response"];
 	if (response != nil) {
 		NSArray *venues = [response objectForKey:@"venues"];
-		NSLog(@"%@", venues);
 		[self connectionDidReceiveArray:venues];
 		return;
 	}
