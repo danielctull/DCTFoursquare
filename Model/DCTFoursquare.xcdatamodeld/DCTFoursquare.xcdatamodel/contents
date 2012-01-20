@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="878" systemVersion="11C74" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="DCTFoursquareCategory" representedClassName="DCTFoursquareCategory" syncable="YES">
+        <attribute name="categoryID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="iconURLString" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pluralName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="shortName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="icons" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="DCTFoursquareIcon" inverseName="categories" inverseEntity="DCTFoursquareIcon" syncable="YES"/>
+        <relationship name="venues" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="DCTFoursquareVenue" inverseName="category" inverseEntity="DCTFoursquareVenue" syncable="YES"/>
+    </entity>
+    <entity name="DCTFoursquareIcon" representedClassName="DCTFoursquareIcon" syncable="YES">
+        <attribute name="size" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="urlString" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="categories" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="DCTFoursquareCategory" inverseName="icons" inverseEntity="DCTFoursquareCategory" syncable="YES"/>
+    </entity>
+    <entity name="DCTFoursquareLocation" representedClassName="DCTFoursquareLocation" syncable="YES">
+        <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="country" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="crossStreet" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lat" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="lng" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="postalCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="state" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="venues" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="DCTFoursquareVenue" inverseName="location" inverseEntity="DCTFoursquareVenue" syncable="YES"/>
+    </entity>
+    <entity name="DCTFoursquareUser" representedClassName="DCTFoursquareUser" syncable="YES"/>
+    <entity name="DCTFoursquareVenue" representedClassName="DCTFoursquareVenue" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="venueID" attributeType="String" syncable="YES"/>
+        <relationship name="category" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="DCTFoursquareCategory" inverseName="venues" inverseEntity="DCTFoursquareCategory" syncable="YES"/>
+        <relationship name="indexes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="DCTFoursquareVenueSearchIndex" inverseName="venue" inverseEntity="DCTFoursquareVenueSearchIndex" syncable="YES"/>
+        <relationship name="location" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="DCTFoursquareLocation" inverseName="venues" inverseEntity="DCTFoursquareLocation" syncable="YES"/>
+    </entity>
+    <entity name="DCTFoursquareVenueSearch" representedClassName="DCTFoursquareVenueSearch" syncable="YES">
+        <relationship name="indexes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="DCTFoursquareVenueSearchIndex" inverseName="venueSearch" inverseEntity="DCTFoursquareVenueSearchIndex" syncable="YES"/>
+    </entity>
+    <entity name="DCTFoursquareVenueSearchIndex" representedClassName="DCTFoursquareVenueSearchIndex" syncable="YES">
+        <attribute name="distance" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <relationship name="venue" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="DCTFoursquareVenue" inverseName="indexes" inverseEntity="DCTFoursquareVenue" syncable="YES"/>
+        <relationship name="venueSearch" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="DCTFoursquareVenueSearch" inverseName="indexes" inverseEntity="DCTFoursquareVenueSearch" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="DCTFoursquareVenue" positionX="180" positionY="189" width="128" height="120"/>
+        <element name="DCTFoursquareCategory" positionX="277" positionY="18" width="128" height="150"/>
+        <element name="DCTFoursquareUser" positionX="90" positionY="-144" width="128" height="45"/>
+        <element name="DCTFoursquareLocation" positionX="261" positionY="402" width="128" height="165"/>
+        <element name="DCTFoursquareVenueSearch" positionX="900" positionY="246" width="191" height="60"/>
+        <element name="DCTFoursquareVenueSearchIndex" positionX="432" positionY="216" width="207" height="90"/>
+        <element name="DCTFoursquareIcon" positionX="252" positionY="198" width="128" height="90"/>
+    </elements>
+</model>

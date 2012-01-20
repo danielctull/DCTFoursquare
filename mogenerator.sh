@@ -1,0 +1,1 @@
+mogenerator -m Model/DCTFoursquare.xcdatamodeld/DCTFoursquare.xcdatamodel -M Model/Generated -H Model --template-var arc=true --base-class=DCTFoursquareManagedObject
