@@ -14,7 +14,6 @@
 		24D91CD314C9961200B22297 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 24D91CD114C9961200B22297 /* InfoPlist.strings */; };
 		24D91CD514C9961200B22297 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D91CD414C9961200B22297 /* main.m */; };
 		24D91CD914C9961200B22297 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D91CD814C9961200B22297 /* AppDelegate.m */; };
-		24D91CDC14C9961200B22297 /* DCTFoursquare.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 24D91CDA14C9961200B22297 /* DCTFoursquare.xcdatamodeld */; };
 		24D91D2B14C9972700B22297 /* DCTConnectionController+BlockHandlers.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D91CE614C9972700B22297 /* DCTConnectionController+BlockHandlers.m */; };
 		24D91D2C14C9972700B22297 /* DCTConnectionController+Delegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D91CE814C9972700B22297 /* DCTConnectionController+Delegate.m */; };
 		24D91D2D14C9972700B22297 /* DCTConnectionController+DownloadPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D91CEA14C9972700B22297 /* DCTConnectionController+DownloadPath.m */; };
@@ -29,7 +28,6 @@
 		24D91D3614C9972700B22297 /* DCTConnectionQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D91CFC14C9972700B22297 /* DCTConnectionQueue.m */; };
 		24D91D3714C9972700B22297 /* DCTRESTConnectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D91CFE14C9972700B22297 /* DCTRESTConnectionController.m */; };
 		24D91D3814C9972700B22297 /* NSString+DCTURLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D91D0014C9972700B22297 /* NSString+DCTURLEncoding.m */; };
-		24D91D3914C9972700B22297 /* Readme.textile in Resources */ = {isa = PBXBuildFile; fileRef = 24D91D0114C9972700B22297 /* Readme.textile */; };
 		24D91D3A14C9972700B22297 /* NSManagedObjectContext+DCTAsynchronousDataFetching.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D91D0514C9972700B22297 /* NSManagedObjectContext+DCTAsynchronousDataFetching.m */; };
 		24D91D3B14C9972700B22297 /* NSManagedObjectContext+DCTAsynchronousTasks.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D91D0714C9972700B22297 /* NSManagedObjectContext+DCTAsynchronousTasks.m */; };
 		24D91D3C14C9972700B22297 /* NSAttributeDescription+DCTObjectCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D91D0A14C9972700B22297 /* NSAttributeDescription+DCTObjectCheck.m */; };
@@ -46,9 +44,53 @@
 		24D91D4714C9972700B22297 /* NSManagedObjectContext+DCTDataFetching.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D91D2014C9972700B22297 /* NSManagedObjectContext+DCTDataFetching.m */; };
 		24D91D4814C9972700B22297 /* NSManagedObjectContext+DCTExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D91D2214C9972700B22297 /* NSManagedObjectContext+DCTExtras.m */; };
 		24D91D4914C9972700B22297 /* NSPredicate+DCTExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D91D2414C9972700B22297 /* NSPredicate+DCTExtras.m */; };
-		24D91D4A14C9972700B22297 /* Readme.textile in Resources */ = {isa = PBXBuildFile; fileRef = 24D91D2514C9972700B22297 /* Readme.textile */; };
 		24D91D4B14C9972700B22297 /* DCTCoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D91D2814C9972700B22297 /* DCTCoreDataStack.m */; };
 		24D91D4C14C9972700B22297 /* NSManagedObjectContext+DCTCoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D91D2A14C9972700B22297 /* NSManagedObjectContext+DCTCoreDataStack.m */; };
+		24D91D9414C9AE5200B22297 /* DCTFoursquareConnectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D91D9314C9AE5200B22297 /* DCTFoursquareConnectionController.m */; };
+		24D91D9714C9B18400B22297 /* DCTFoursquareVenuesSearchConnectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D91D9614C9B18400B22297 /* DCTFoursquareVenuesSearchConnectionController.m */; };
+		24D91DAE14C9C05A00B22297 /* DCTQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D91D9B14C9C05A00B22297 /* DCTQueue.m */; };
+		24D91DAF14C9C05A00B22297 /* DCTStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D91D9D14C9C05A00B22297 /* DCTStack.m */; };
+		24D91DB014C9C05A00B22297 /* NSArray+DCTExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D91D9F14C9C05A00B22297 /* NSArray+DCTExtras.m */; };
+		24D91DB114C9C05A00B22297 /* NSDate+DCTDateComponents.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D91DA114C9C05A00B22297 /* NSDate+DCTDateComponents.m */; };
+		24D91DB214C9C05A00B22297 /* NSDictionary+DCTExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D91DA314C9C05A00B22297 /* NSDictionary+DCTExtras.m */; };
+		24D91DB314C9C05A00B22297 /* NSError+DCTExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D91DA514C9C05A00B22297 /* NSError+DCTExtensions.m */; };
+		24D91DB414C9C05A00B22297 /* NSJSONSerialization+DCTBlocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D91DA714C9C05A00B22297 /* NSJSONSerialization+DCTBlocks.m */; };
+		24D91DB514C9C05A00B22297 /* NSMutableArray+DCTExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D91DA914C9C05A00B22297 /* NSMutableArray+DCTExtras.m */; };
+		24D91DB614C9C05A00B22297 /* NSMutableSet+DCTExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D91DAB14C9C05A00B22297 /* NSMutableSet+DCTExtras.m */; };
+		24D91DB714C9C05A00B22297 /* NSObject+DCTKVOExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D91DAD14C9C05A00B22297 /* NSObject+DCTKVOExtras.m */; };
+		24D91DB914C9C18500B22297 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24D91DB814C9C18500B22297 /* CoreLocation.framework */; };
+		24D91DBD14C9C2A100B22297 /* VenueSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D91DBB14C9C2A100B22297 /* VenueSearchViewController.m */; };
+		24D91DBE14C9C2A100B22297 /* VenueSearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24D91DBC14C9C2A100B22297 /* VenueSearchViewController.xib */; };
+		24D91DC014C9C35100B22297 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24D91DBF14C9C35100B22297 /* MapKit.framework */; };
+		24D91DDF14C9C82C00B22297 /* FRCArrayTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D91DC314C9C82C00B22297 /* FRCArrayTableViewDataSource.m */; };
+		24D91DE014C9C82C00B22297 /* FRCCollapsableSectionTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D91DC514C9C82C00B22297 /* FRCCollapsableSectionTableViewDataSource.m */; };
+		24D91DE114C9C82C00B22297 /* FRCFetchedResultsTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D91DC714C9C82C00B22297 /* FRCFetchedResultsTableViewDataSource.m */; };
+		24D91DE214C9C82C00B22297 /* FRCHorizontalTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D91DC914C9C82C00B22297 /* FRCHorizontalTableViewDataSource.m */; };
+		24D91DE314C9C82C00B22297 /* FRCObjectTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D91DCB14C9C82C00B22297 /* FRCObjectTableViewDataSource.m */; };
+		24D91DE414C9C82C00B22297 /* FRCParentTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D91DCD14C9C82C00B22297 /* FRCParentTableViewDataSource.m */; };
+		24D91DE514C9C82C00B22297 /* FRCSplitTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D91DCF14C9C82C00B22297 /* FRCSplitTableViewDataSource.m */; };
+		24D91DE614C9C82C00B22297 /* FRCTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D91DD114C9C82C00B22297 /* FRCTableViewCell.m */; };
+		24D91DE714C9C82C00B22297 /* FRCTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D91DD314C9C82C00B22297 /* FRCTableViewDataSource.m */; };
+		24D91DE814C9C82C00B22297 /* FRCCollapsableSectionTableViewDataSourceDisclosureIndicator.png in Resources */ = {isa = PBXBuildFile; fileRef = 24D91DD614C9C82C00B22297 /* FRCCollapsableSectionTableViewDataSourceDisclosureIndicator.png */; };
+		24D91DE914C9C82C00B22297 /* FRCCollapsableSectionTableViewDataSourceDisclosureIndicator@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24D91DD714C9C82C00B22297 /* FRCCollapsableSectionTableViewDataSourceDisclosureIndicator@2x.png */; };
+		24D91DEA14C9C82C00B22297 /* FRCCollapsableSectionTableViewDataSourceDisclosureIndicatorHighlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = 24D91DD814C9C82C00B22297 /* FRCCollapsableSectionTableViewDataSourceDisclosureIndicatorHighlighted.png */; };
+		24D91DEB14C9C82C00B22297 /* FRCCollapsableSectionTableViewDataSourceDisclosureIndicatorHighlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24D91DD914C9C82C00B22297 /* FRCCollapsableSectionTableViewDataSourceDisclosureIndicatorHighlighted@2x.png */; };
+		24D91DEC14C9C82C00B22297 /* Readme.textile in Resources */ = {isa = PBXBuildFile; fileRef = 24D91DDA14C9C82C00B22297 /* Readme.textile */; };
+		24D91DED14C9C82C00B22297 /* UITableView+FRCNibRegistration.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D91DDC14C9C82C00B22297 /* UITableView+FRCNibRegistration.m */; };
+		24D91DEE14C9C82C00B22297 /* UITableView+FRCTableViewDataSources.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D91DDE14C9C82C00B22297 /* UITableView+FRCTableViewDataSources.m */; };
+		24D91DF014C9C93400B22297 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24D91DEF14C9C93400B22297 /* QuartzCore.framework */; };
+		24D91E0F14C9D3E400B22297 /* DCTFoursquare.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 24D91DF214C9D3E400B22297 /* DCTFoursquare.xcdatamodeld */; };
+		24D91E1014C9D3E400B22297 /* DCTFoursquareCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D91DF514C9D3E400B22297 /* DCTFoursquareCategory.m */; };
+		24D91E1114C9D3E400B22297 /* DCTFoursquareIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D91DF714C9D3E400B22297 /* DCTFoursquareIcon.m */; };
+		24D91E1214C9D3E400B22297 /* DCTFoursquareLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D91DF914C9D3E400B22297 /* DCTFoursquareLocation.m */; };
+		24D91E1314C9D3E400B22297 /* DCTFoursquareManagedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D91DFB14C9D3E400B22297 /* DCTFoursquareManagedObject.m */; };
+		24D91E1514C9D3E400B22297 /* DCTFoursquareVenue.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D91DFF14C9D3E400B22297 /* DCTFoursquareVenue.m */; };
+		24D91E1614C9D3E400B22297 /* DCTFoursquareVenueSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D91E0114C9D3E400B22297 /* DCTFoursquareVenueSearch.m */; };
+		24D91E1714C9D3E400B22297 /* _DCTFoursquareCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D91E0414C9D3E400B22297 /* _DCTFoursquareCategory.m */; };
+		24D91E1814C9D3E400B22297 /* _DCTFoursquareIcon.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D91E0614C9D3E400B22297 /* _DCTFoursquareIcon.m */; };
+		24D91E1914C9D3E400B22297 /* _DCTFoursquareLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D91E0814C9D3E400B22297 /* _DCTFoursquareLocation.m */; };
+		24D91E1B14C9D3E400B22297 /* _DCTFoursquareVenue.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D91E0C14C9D3E400B22297 /* _DCTFoursquareVenue.m */; };
+		24D91E1C14C9D3E400B22297 /* _DCTFoursquareVenueSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D91E0E14C9D3E400B22297 /* _DCTFoursquareVenueSearch.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,7 +105,6 @@
 		24D91CD614C9961200B22297 /* DCTFoursquare-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DCTFoursquare-Prefix.pch"; sourceTree = "<group>"; };
 		24D91CD714C9961200B22297 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		24D91CD814C9961200B22297 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		24D91CDB14C9961200B22297 /* DCTFoursquare.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DCTFoursquare.xcdatamodel; sourceTree = "<group>"; };
 		24D91CE414C9972700B22297 /* dct_weak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dct_weak.h; sourceTree = "<group>"; };
 		24D91CE514C9972700B22297 /* DCTConnectionController+BlockHandlers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DCTConnectionController+BlockHandlers.h"; sourceTree = "<group>"; };
 		24D91CE614C9972700B22297 /* DCTConnectionController+BlockHandlers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DCTConnectionController+BlockHandlers.m"; sourceTree = "<group>"; };
@@ -131,6 +172,88 @@
 		24D91D2814C9972700B22297 /* DCTCoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCTCoreDataStack.m; sourceTree = "<group>"; };
 		24D91D2914C9972700B22297 /* NSManagedObjectContext+DCTCoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObjectContext+DCTCoreDataStack.h"; sourceTree = "<group>"; };
 		24D91D2A14C9972700B22297 /* NSManagedObjectContext+DCTCoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObjectContext+DCTCoreDataStack.m"; sourceTree = "<group>"; };
+		24D91D9214C9AE5200B22297 /* DCTFoursquareConnectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTFoursquareConnectionController.h; sourceTree = "<group>"; };
+		24D91D9314C9AE5200B22297 /* DCTFoursquareConnectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCTFoursquareConnectionController.m; sourceTree = "<group>"; };
+		24D91D9514C9B18400B22297 /* DCTFoursquareVenuesSearchConnectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTFoursquareVenuesSearchConnectionController.h; sourceTree = "<group>"; };
+		24D91D9614C9B18400B22297 /* DCTFoursquareVenuesSearchConnectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCTFoursquareVenuesSearchConnectionController.m; sourceTree = "<group>"; };
+		24D91D9914C9C05A00B22297 /* DCTFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTFoundation.h; sourceTree = "<group>"; };
+		24D91D9A14C9C05A00B22297 /* DCTQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTQueue.h; sourceTree = "<group>"; };
+		24D91D9B14C9C05A00B22297 /* DCTQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCTQueue.m; sourceTree = "<group>"; };
+		24D91D9C14C9C05A00B22297 /* DCTStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTStack.h; sourceTree = "<group>"; };
+		24D91D9D14C9C05A00B22297 /* DCTStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCTStack.m; sourceTree = "<group>"; };
+		24D91D9E14C9C05A00B22297 /* NSArray+DCTExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+DCTExtras.h"; sourceTree = "<group>"; };
+		24D91D9F14C9C05A00B22297 /* NSArray+DCTExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+DCTExtras.m"; sourceTree = "<group>"; };
+		24D91DA014C9C05A00B22297 /* NSDate+DCTDateComponents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+DCTDateComponents.h"; sourceTree = "<group>"; };
+		24D91DA114C9C05A00B22297 /* NSDate+DCTDateComponents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+DCTDateComponents.m"; sourceTree = "<group>"; };
+		24D91DA214C9C05A00B22297 /* NSDictionary+DCTExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+DCTExtras.h"; sourceTree = "<group>"; };
+		24D91DA314C9C05A00B22297 /* NSDictionary+DCTExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+DCTExtras.m"; sourceTree = "<group>"; };
+		24D91DA414C9C05A00B22297 /* NSError+DCTExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+DCTExtensions.h"; sourceTree = "<group>"; };
+		24D91DA514C9C05A00B22297 /* NSError+DCTExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+DCTExtensions.m"; sourceTree = "<group>"; };
+		24D91DA614C9C05A00B22297 /* NSJSONSerialization+DCTBlocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSJSONSerialization+DCTBlocks.h"; sourceTree = "<group>"; };
+		24D91DA714C9C05A00B22297 /* NSJSONSerialization+DCTBlocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSJSONSerialization+DCTBlocks.m"; sourceTree = "<group>"; };
+		24D91DA814C9C05A00B22297 /* NSMutableArray+DCTExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+DCTExtras.h"; sourceTree = "<group>"; };
+		24D91DA914C9C05A00B22297 /* NSMutableArray+DCTExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+DCTExtras.m"; sourceTree = "<group>"; };
+		24D91DAA14C9C05A00B22297 /* NSMutableSet+DCTExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableSet+DCTExtras.h"; sourceTree = "<group>"; };
+		24D91DAB14C9C05A00B22297 /* NSMutableSet+DCTExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableSet+DCTExtras.m"; sourceTree = "<group>"; };
+		24D91DAC14C9C05A00B22297 /* NSObject+DCTKVOExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+DCTKVOExtras.h"; sourceTree = "<group>"; };
+		24D91DAD14C9C05A00B22297 /* NSObject+DCTKVOExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DCTKVOExtras.m"; sourceTree = "<group>"; };
+		24D91DB814C9C18500B22297 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		24D91DBA14C9C2A100B22297 /* VenueSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VenueSearchViewController.h; sourceTree = "<group>"; };
+		24D91DBB14C9C2A100B22297 /* VenueSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VenueSearchViewController.m; sourceTree = "<group>"; };
+		24D91DBC14C9C2A100B22297 /* VenueSearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VenueSearchViewController.xib; sourceTree = "<group>"; };
+		24D91DBF14C9C35100B22297 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		24D91DC214C9C82C00B22297 /* FRCArrayTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRCArrayTableViewDataSource.h; sourceTree = "<group>"; };
+		24D91DC314C9C82C00B22297 /* FRCArrayTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRCArrayTableViewDataSource.m; sourceTree = "<group>"; };
+		24D91DC414C9C82C00B22297 /* FRCCollapsableSectionTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRCCollapsableSectionTableViewDataSource.h; sourceTree = "<group>"; };
+		24D91DC514C9C82C00B22297 /* FRCCollapsableSectionTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRCCollapsableSectionTableViewDataSource.m; sourceTree = "<group>"; };
+		24D91DC614C9C82C00B22297 /* FRCFetchedResultsTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRCFetchedResultsTableViewDataSource.h; sourceTree = "<group>"; };
+		24D91DC714C9C82C00B22297 /* FRCFetchedResultsTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRCFetchedResultsTableViewDataSource.m; sourceTree = "<group>"; };
+		24D91DC814C9C82C00B22297 /* FRCHorizontalTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRCHorizontalTableViewDataSource.h; sourceTree = "<group>"; };
+		24D91DC914C9C82C00B22297 /* FRCHorizontalTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRCHorizontalTableViewDataSource.m; sourceTree = "<group>"; };
+		24D91DCA14C9C82C00B22297 /* FRCObjectTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRCObjectTableViewDataSource.h; sourceTree = "<group>"; };
+		24D91DCB14C9C82C00B22297 /* FRCObjectTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRCObjectTableViewDataSource.m; sourceTree = "<group>"; };
+		24D91DCC14C9C82C00B22297 /* FRCParentTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRCParentTableViewDataSource.h; sourceTree = "<group>"; };
+		24D91DCD14C9C82C00B22297 /* FRCParentTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRCParentTableViewDataSource.m; sourceTree = "<group>"; };
+		24D91DCE14C9C82C00B22297 /* FRCSplitTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRCSplitTableViewDataSource.h; sourceTree = "<group>"; };
+		24D91DCF14C9C82C00B22297 /* FRCSplitTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRCSplitTableViewDataSource.m; sourceTree = "<group>"; };
+		24D91DD014C9C82C00B22297 /* FRCTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRCTableViewCell.h; sourceTree = "<group>"; };
+		24D91DD114C9C82C00B22297 /* FRCTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRCTableViewCell.m; sourceTree = "<group>"; };
+		24D91DD214C9C82C00B22297 /* FRCTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRCTableViewDataSource.h; sourceTree = "<group>"; };
+		24D91DD314C9C82C00B22297 /* FRCTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRCTableViewDataSource.m; sourceTree = "<group>"; };
+		24D91DD414C9C82C00B22297 /* FRCTableViewDataSources.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRCTableViewDataSources.h; sourceTree = "<group>"; };
+		24D91DD614C9C82C00B22297 /* FRCCollapsableSectionTableViewDataSourceDisclosureIndicator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FRCCollapsableSectionTableViewDataSourceDisclosureIndicator.png; sourceTree = "<group>"; };
+		24D91DD714C9C82C00B22297 /* FRCCollapsableSectionTableViewDataSourceDisclosureIndicator@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FRCCollapsableSectionTableViewDataSourceDisclosureIndicator@2x.png"; sourceTree = "<group>"; };
+		24D91DD814C9C82C00B22297 /* FRCCollapsableSectionTableViewDataSourceDisclosureIndicatorHighlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FRCCollapsableSectionTableViewDataSourceDisclosureIndicatorHighlighted.png; sourceTree = "<group>"; };
+		24D91DD914C9C82C00B22297 /* FRCCollapsableSectionTableViewDataSourceDisclosureIndicatorHighlighted@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FRCCollapsableSectionTableViewDataSourceDisclosureIndicatorHighlighted@2x.png"; sourceTree = "<group>"; };
+		24D91DDA14C9C82C00B22297 /* Readme.textile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Readme.textile; sourceTree = "<group>"; };
+		24D91DDB14C9C82C00B22297 /* UITableView+FRCNibRegistration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+FRCNibRegistration.h"; sourceTree = "<group>"; };
+		24D91DDC14C9C82C00B22297 /* UITableView+FRCNibRegistration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+FRCNibRegistration.m"; sourceTree = "<group>"; };
+		24D91DDD14C9C82C00B22297 /* UITableView+FRCTableViewDataSources.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+FRCTableViewDataSources.h"; sourceTree = "<group>"; };
+		24D91DDE14C9C82C00B22297 /* UITableView+FRCTableViewDataSources.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+FRCTableViewDataSources.m"; sourceTree = "<group>"; };
+		24D91DEF14C9C93400B22297 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		24D91DF314C9D3E400B22297 /* DCTFoursquare.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DCTFoursquare.xcdatamodel; sourceTree = "<group>"; };
+		24D91DF414C9D3E400B22297 /* DCTFoursquareCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTFoursquareCategory.h; sourceTree = "<group>"; };
+		24D91DF514C9D3E400B22297 /* DCTFoursquareCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCTFoursquareCategory.m; sourceTree = "<group>"; };
+		24D91DF614C9D3E400B22297 /* DCTFoursquareIcon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTFoursquareIcon.h; sourceTree = "<group>"; };
+		24D91DF714C9D3E400B22297 /* DCTFoursquareIcon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCTFoursquareIcon.m; sourceTree = "<group>"; };
+		24D91DF814C9D3E400B22297 /* DCTFoursquareLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTFoursquareLocation.h; sourceTree = "<group>"; };
+		24D91DF914C9D3E400B22297 /* DCTFoursquareLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCTFoursquareLocation.m; sourceTree = "<group>"; };
+		24D91DFA14C9D3E400B22297 /* DCTFoursquareManagedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTFoursquareManagedObject.h; sourceTree = "<group>"; };
+		24D91DFB14C9D3E400B22297 /* DCTFoursquareManagedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCTFoursquareManagedObject.m; sourceTree = "<group>"; };
+		24D91DFE14C9D3E400B22297 /* DCTFoursquareVenue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTFoursquareVenue.h; sourceTree = "<group>"; };
+		24D91DFF14C9D3E400B22297 /* DCTFoursquareVenue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCTFoursquareVenue.m; sourceTree = "<group>"; };
+		24D91E0014C9D3E400B22297 /* DCTFoursquareVenueSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTFoursquareVenueSearch.h; sourceTree = "<group>"; };
+		24D91E0114C9D3E400B22297 /* DCTFoursquareVenueSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCTFoursquareVenueSearch.m; sourceTree = "<group>"; };
+		24D91E0314C9D3E400B22297 /* _DCTFoursquareCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _DCTFoursquareCategory.h; sourceTree = "<group>"; };
+		24D91E0414C9D3E400B22297 /* _DCTFoursquareCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _DCTFoursquareCategory.m; sourceTree = "<group>"; };
+		24D91E0514C9D3E400B22297 /* _DCTFoursquareIcon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _DCTFoursquareIcon.h; sourceTree = "<group>"; };
+		24D91E0614C9D3E400B22297 /* _DCTFoursquareIcon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _DCTFoursquareIcon.m; sourceTree = "<group>"; };
+		24D91E0714C9D3E400B22297 /* _DCTFoursquareLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _DCTFoursquareLocation.h; sourceTree = "<group>"; };
+		24D91E0814C9D3E400B22297 /* _DCTFoursquareLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _DCTFoursquareLocation.m; sourceTree = "<group>"; };
+		24D91E0B14C9D3E400B22297 /* _DCTFoursquareVenue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _DCTFoursquareVenue.h; sourceTree = "<group>"; };
+		24D91E0C14C9D3E400B22297 /* _DCTFoursquareVenue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _DCTFoursquareVenue.m; sourceTree = "<group>"; };
+		24D91E0D14C9D3E400B22297 /* _DCTFoursquareVenueSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _DCTFoursquareVenueSearch.h; sourceTree = "<group>"; };
+		24D91E0E14C9D3E400B22297 /* _DCTFoursquareVenueSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _DCTFoursquareVenueSearch.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +261,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24D91DF014C9C93400B22297 /* QuartzCore.framework in Frameworks */,
+				24D91DC014C9C35100B22297 /* MapKit.framework in Frameworks */,
+				24D91DB914C9C18500B22297 /* CoreLocation.framework in Frameworks */,
 				24D91CC714C9961200B22297 /* UIKit.framework in Frameworks */,
 				24D91CC914C9961200B22297 /* Foundation.framework in Frameworks */,
 				24D91CCB14C9961200B22297 /* CoreGraphics.framework in Frameworks */,
@@ -154,6 +280,8 @@
 				24D91CE314C9972700B22297 /* DCTConnectionController */,
 				24D91D0214C9972700B22297 /* DCTCoreData */,
 				24D91D2614C9972700B22297 /* DCTCoreDataStack */,
+				24D91D9814C9C05A00B22297 /* DCTFoundation */,
+				24D91DC114C9C82C00B22297 /* FRCTableViewDataSources */,
 				24D91CE214C996AD00B22297 /* DCTFoursquare */,
 				24D91CCE14C9961200B22297 /* DCTFoursquare Demo */,
 				24D91CC514C9961200B22297 /* Frameworks */,
@@ -172,6 +300,9 @@
 		24D91CC514C9961200B22297 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				24D91DEF14C9C93400B22297 /* QuartzCore.framework */,
+				24D91DBF14C9C35100B22297 /* MapKit.framework */,
+				24D91DB814C9C18500B22297 /* CoreLocation.framework */,
 				24D91CC614C9961200B22297 /* UIKit.framework */,
 				24D91CC814C9961200B22297 /* Foundation.framework */,
 				24D91CCA14C9961200B22297 /* CoreGraphics.framework */,
@@ -185,8 +316,10 @@
 			children = (
 				24D91CD714C9961200B22297 /* AppDelegate.h */,
 				24D91CD814C9961200B22297 /* AppDelegate.m */,
-				24D91CDA14C9961200B22297 /* DCTFoursquare.xcdatamodeld */,
 				24D91CCF14C9961200B22297 /* Supporting Files */,
+				24D91DBA14C9C2A100B22297 /* VenueSearchViewController.h */,
+				24D91DBB14C9C2A100B22297 /* VenueSearchViewController.m */,
+				24D91DBC14C9C2A100B22297 /* VenueSearchViewController.xib */,
 			);
 			path = "DCTFoursquare Demo";
 			sourceTree = "<group>";
@@ -205,6 +338,8 @@
 		24D91CE214C996AD00B22297 /* DCTFoursquare */ = {
 			isa = PBXGroup;
 			children = (
+				24D91D8B14C9A76F00B22297 /* Connections */,
+				24D91DF114C9D3E400B22297 /* Model */,
 			);
 			path = DCTFoursquare;
 			sourceTree = "<group>";
@@ -313,6 +448,126 @@
 			path = DCTCoreDataStack;
 			sourceTree = "<group>";
 		};
+		24D91D8B14C9A76F00B22297 /* Connections */ = {
+			isa = PBXGroup;
+			children = (
+				24D91D9214C9AE5200B22297 /* DCTFoursquareConnectionController.h */,
+				24D91D9314C9AE5200B22297 /* DCTFoursquareConnectionController.m */,
+				24D91D9514C9B18400B22297 /* DCTFoursquareVenuesSearchConnectionController.h */,
+				24D91D9614C9B18400B22297 /* DCTFoursquareVenuesSearchConnectionController.m */,
+			);
+			path = Connections;
+			sourceTree = "<group>";
+		};
+		24D91D9814C9C05A00B22297 /* DCTFoundation */ = {
+			isa = PBXGroup;
+			children = (
+				24D91D9914C9C05A00B22297 /* DCTFoundation.h */,
+				24D91D9A14C9C05A00B22297 /* DCTQueue.h */,
+				24D91D9B14C9C05A00B22297 /* DCTQueue.m */,
+				24D91D9C14C9C05A00B22297 /* DCTStack.h */,
+				24D91D9D14C9C05A00B22297 /* DCTStack.m */,
+				24D91D9E14C9C05A00B22297 /* NSArray+DCTExtras.h */,
+				24D91D9F14C9C05A00B22297 /* NSArray+DCTExtras.m */,
+				24D91DA014C9C05A00B22297 /* NSDate+DCTDateComponents.h */,
+				24D91DA114C9C05A00B22297 /* NSDate+DCTDateComponents.m */,
+				24D91DA214C9C05A00B22297 /* NSDictionary+DCTExtras.h */,
+				24D91DA314C9C05A00B22297 /* NSDictionary+DCTExtras.m */,
+				24D91DA414C9C05A00B22297 /* NSError+DCTExtensions.h */,
+				24D91DA514C9C05A00B22297 /* NSError+DCTExtensions.m */,
+				24D91DA614C9C05A00B22297 /* NSJSONSerialization+DCTBlocks.h */,
+				24D91DA714C9C05A00B22297 /* NSJSONSerialization+DCTBlocks.m */,
+				24D91DA814C9C05A00B22297 /* NSMutableArray+DCTExtras.h */,
+				24D91DA914C9C05A00B22297 /* NSMutableArray+DCTExtras.m */,
+				24D91DAA14C9C05A00B22297 /* NSMutableSet+DCTExtras.h */,
+				24D91DAB14C9C05A00B22297 /* NSMutableSet+DCTExtras.m */,
+				24D91DAC14C9C05A00B22297 /* NSObject+DCTKVOExtras.h */,
+				24D91DAD14C9C05A00B22297 /* NSObject+DCTKVOExtras.m */,
+			);
+			path = DCTFoundation;
+			sourceTree = "<group>";
+		};
+		24D91DC114C9C82C00B22297 /* FRCTableViewDataSources */ = {
+			isa = PBXGroup;
+			children = (
+				24D91DC214C9C82C00B22297 /* FRCArrayTableViewDataSource.h */,
+				24D91DC314C9C82C00B22297 /* FRCArrayTableViewDataSource.m */,
+				24D91DC414C9C82C00B22297 /* FRCCollapsableSectionTableViewDataSource.h */,
+				24D91DC514C9C82C00B22297 /* FRCCollapsableSectionTableViewDataSource.m */,
+				24D91DC614C9C82C00B22297 /* FRCFetchedResultsTableViewDataSource.h */,
+				24D91DC714C9C82C00B22297 /* FRCFetchedResultsTableViewDataSource.m */,
+				24D91DC814C9C82C00B22297 /* FRCHorizontalTableViewDataSource.h */,
+				24D91DC914C9C82C00B22297 /* FRCHorizontalTableViewDataSource.m */,
+				24D91DCA14C9C82C00B22297 /* FRCObjectTableViewDataSource.h */,
+				24D91DCB14C9C82C00B22297 /* FRCObjectTableViewDataSource.m */,
+				24D91DCC14C9C82C00B22297 /* FRCParentTableViewDataSource.h */,
+				24D91DCD14C9C82C00B22297 /* FRCParentTableViewDataSource.m */,
+				24D91DCE14C9C82C00B22297 /* FRCSplitTableViewDataSource.h */,
+				24D91DCF14C9C82C00B22297 /* FRCSplitTableViewDataSource.m */,
+				24D91DD014C9C82C00B22297 /* FRCTableViewCell.h */,
+				24D91DD114C9C82C00B22297 /* FRCTableViewCell.m */,
+				24D91DD214C9C82C00B22297 /* FRCTableViewDataSource.h */,
+				24D91DD314C9C82C00B22297 /* FRCTableViewDataSource.m */,
+				24D91DD414C9C82C00B22297 /* FRCTableViewDataSources.h */,
+				24D91DD514C9C82C00B22297 /* Images */,
+				24D91DDA14C9C82C00B22297 /* Readme.textile */,
+				24D91DDB14C9C82C00B22297 /* UITableView+FRCNibRegistration.h */,
+				24D91DDC14C9C82C00B22297 /* UITableView+FRCNibRegistration.m */,
+				24D91DDD14C9C82C00B22297 /* UITableView+FRCTableViewDataSources.h */,
+				24D91DDE14C9C82C00B22297 /* UITableView+FRCTableViewDataSources.m */,
+			);
+			path = FRCTableViewDataSources;
+			sourceTree = "<group>";
+		};
+		24D91DD514C9C82C00B22297 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				24D91DD614C9C82C00B22297 /* FRCCollapsableSectionTableViewDataSourceDisclosureIndicator.png */,
+				24D91DD714C9C82C00B22297 /* FRCCollapsableSectionTableViewDataSourceDisclosureIndicator@2x.png */,
+				24D91DD814C9C82C00B22297 /* FRCCollapsableSectionTableViewDataSourceDisclosureIndicatorHighlighted.png */,
+				24D91DD914C9C82C00B22297 /* FRCCollapsableSectionTableViewDataSourceDisclosureIndicatorHighlighted@2x.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		24D91DF114C9D3E400B22297 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				24D91DF214C9D3E400B22297 /* DCTFoursquare.xcdatamodeld */,
+				24D91DF414C9D3E400B22297 /* DCTFoursquareCategory.h */,
+				24D91DF514C9D3E400B22297 /* DCTFoursquareCategory.m */,
+				24D91DF614C9D3E400B22297 /* DCTFoursquareIcon.h */,
+				24D91DF714C9D3E400B22297 /* DCTFoursquareIcon.m */,
+				24D91DF814C9D3E400B22297 /* DCTFoursquareLocation.h */,
+				24D91DF914C9D3E400B22297 /* DCTFoursquareLocation.m */,
+				24D91DFA14C9D3E400B22297 /* DCTFoursquareManagedObject.h */,
+				24D91DFB14C9D3E400B22297 /* DCTFoursquareManagedObject.m */,
+				24D91DFE14C9D3E400B22297 /* DCTFoursquareVenue.h */,
+				24D91DFF14C9D3E400B22297 /* DCTFoursquareVenue.m */,
+				24D91E0014C9D3E400B22297 /* DCTFoursquareVenueSearch.h */,
+				24D91E0114C9D3E400B22297 /* DCTFoursquareVenueSearch.m */,
+				24D91E0214C9D3E400B22297 /* Generated */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		24D91E0214C9D3E400B22297 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				24D91E0314C9D3E400B22297 /* _DCTFoursquareCategory.h */,
+				24D91E0414C9D3E400B22297 /* _DCTFoursquareCategory.m */,
+				24D91E0514C9D3E400B22297 /* _DCTFoursquareIcon.h */,
+				24D91E0614C9D3E400B22297 /* _DCTFoursquareIcon.m */,
+				24D91E0714C9D3E400B22297 /* _DCTFoursquareLocation.h */,
+				24D91E0814C9D3E400B22297 /* _DCTFoursquareLocation.m */,
+				24D91E0B14C9D3E400B22297 /* _DCTFoursquareVenue.h */,
+				24D91E0C14C9D3E400B22297 /* _DCTFoursquareVenue.m */,
+				24D91E0D14C9D3E400B22297 /* _DCTFoursquareVenueSearch.h */,
+				24D91E0E14C9D3E400B22297 /* _DCTFoursquareVenueSearch.m */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -365,8 +620,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				24D91CD314C9961200B22297 /* InfoPlist.strings in Resources */,
-				24D91D3914C9972700B22297 /* Readme.textile in Resources */,
-				24D91D4A14C9972700B22297 /* Readme.textile in Resources */,
+				24D91DBE14C9C2A100B22297 /* VenueSearchViewController.xib in Resources */,
+				24D91DE814C9C82C00B22297 /* FRCCollapsableSectionTableViewDataSourceDisclosureIndicator.png in Resources */,
+				24D91DE914C9C82C00B22297 /* FRCCollapsableSectionTableViewDataSourceDisclosureIndicator@2x.png in Resources */,
+				24D91DEA14C9C82C00B22297 /* FRCCollapsableSectionTableViewDataSourceDisclosureIndicatorHighlighted.png in Resources */,
+				24D91DEB14C9C82C00B22297 /* FRCCollapsableSectionTableViewDataSourceDisclosureIndicatorHighlighted@2x.png in Resources */,
+				24D91DEC14C9C82C00B22297 /* Readme.textile in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,7 +638,6 @@
 			files = (
 				24D91CD514C9961200B22297 /* main.m in Sources */,
 				24D91CD914C9961200B22297 /* AppDelegate.m in Sources */,
-				24D91CDC14C9961200B22297 /* DCTFoursquare.xcdatamodeld in Sources */,
 				24D91D2B14C9972700B22297 /* DCTConnectionController+BlockHandlers.m in Sources */,
 				24D91D2C14C9972700B22297 /* DCTConnectionController+Delegate.m in Sources */,
 				24D91D2D14C9972700B22297 /* DCTConnectionController+DownloadPath.m in Sources */,
@@ -412,6 +670,42 @@
 				24D91D4914C9972700B22297 /* NSPredicate+DCTExtras.m in Sources */,
 				24D91D4B14C9972700B22297 /* DCTCoreDataStack.m in Sources */,
 				24D91D4C14C9972700B22297 /* NSManagedObjectContext+DCTCoreDataStack.m in Sources */,
+				24D91D9414C9AE5200B22297 /* DCTFoursquareConnectionController.m in Sources */,
+				24D91D9714C9B18400B22297 /* DCTFoursquareVenuesSearchConnectionController.m in Sources */,
+				24D91DAE14C9C05A00B22297 /* DCTQueue.m in Sources */,
+				24D91DAF14C9C05A00B22297 /* DCTStack.m in Sources */,
+				24D91DB014C9C05A00B22297 /* NSArray+DCTExtras.m in Sources */,
+				24D91DB114C9C05A00B22297 /* NSDate+DCTDateComponents.m in Sources */,
+				24D91DB214C9C05A00B22297 /* NSDictionary+DCTExtras.m in Sources */,
+				24D91DB314C9C05A00B22297 /* NSError+DCTExtensions.m in Sources */,
+				24D91DB414C9C05A00B22297 /* NSJSONSerialization+DCTBlocks.m in Sources */,
+				24D91DB514C9C05A00B22297 /* NSMutableArray+DCTExtras.m in Sources */,
+				24D91DB614C9C05A00B22297 /* NSMutableSet+DCTExtras.m in Sources */,
+				24D91DB714C9C05A00B22297 /* NSObject+DCTKVOExtras.m in Sources */,
+				24D91DBD14C9C2A100B22297 /* VenueSearchViewController.m in Sources */,
+				24D91DDF14C9C82C00B22297 /* FRCArrayTableViewDataSource.m in Sources */,
+				24D91DE014C9C82C00B22297 /* FRCCollapsableSectionTableViewDataSource.m in Sources */,
+				24D91DE114C9C82C00B22297 /* FRCFetchedResultsTableViewDataSource.m in Sources */,
+				24D91DE214C9C82C00B22297 /* FRCHorizontalTableViewDataSource.m in Sources */,
+				24D91DE314C9C82C00B22297 /* FRCObjectTableViewDataSource.m in Sources */,
+				24D91DE414C9C82C00B22297 /* FRCParentTableViewDataSource.m in Sources */,
+				24D91DE514C9C82C00B22297 /* FRCSplitTableViewDataSource.m in Sources */,
+				24D91DE614C9C82C00B22297 /* FRCTableViewCell.m in Sources */,
+				24D91DE714C9C82C00B22297 /* FRCTableViewDataSource.m in Sources */,
+				24D91DED14C9C82C00B22297 /* UITableView+FRCNibRegistration.m in Sources */,
+				24D91DEE14C9C82C00B22297 /* UITableView+FRCTableViewDataSources.m in Sources */,
+				24D91E0F14C9D3E400B22297 /* DCTFoursquare.xcdatamodeld in Sources */,
+				24D91E1014C9D3E400B22297 /* DCTFoursquareCategory.m in Sources */,
+				24D91E1114C9D3E400B22297 /* DCTFoursquareIcon.m in Sources */,
+				24D91E1214C9D3E400B22297 /* DCTFoursquareLocation.m in Sources */,
+				24D91E1314C9D3E400B22297 /* DCTFoursquareManagedObject.m in Sources */,
+				24D91E1514C9D3E400B22297 /* DCTFoursquareVenue.m in Sources */,
+				24D91E1614C9D3E400B22297 /* DCTFoursquareVenueSearch.m in Sources */,
+				24D91E1714C9D3E400B22297 /* _DCTFoursquareCategory.m in Sources */,
+				24D91E1814C9D3E400B22297 /* _DCTFoursquareIcon.m in Sources */,
+				24D91E1914C9D3E400B22297 /* _DCTFoursquareLocation.m in Sources */,
+				24D91E1B14C9D3E400B22297 /* _DCTFoursquareVenue.m in Sources */,
+				24D91E1C14C9D3E400B22297 /* _DCTFoursquareVenueSearch.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -480,6 +774,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DCTFoursquare Demo/DCTFoursquare-Prefix.pch";
 				INFOPLIST_FILE = "DCTFoursquare Demo/DCTFoursquare-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -491,6 +786,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DCTFoursquare Demo/DCTFoursquare-Prefix.pch";
 				INFOPLIST_FILE = "DCTFoursquare Demo/DCTFoursquare-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -515,16 +811,17 @@
 				24D91CE114C9961200B22297 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		24D91CDA14C9961200B22297 /* DCTFoursquare.xcdatamodeld */ = {
+		24D91DF214C9D3E400B22297 /* DCTFoursquare.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				24D91CDB14C9961200B22297 /* DCTFoursquare.xcdatamodel */,
+				24D91DF314C9D3E400B22297 /* DCTFoursquare.xcdatamodel */,
 			);
-			currentVersion = 24D91CDB14C9961200B22297 /* DCTFoursquare.xcdatamodel */;
+			currentVersion = 24D91DF314C9D3E400B22297 /* DCTFoursquare.xcdatamodel */;
 			path = DCTFoursquare.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

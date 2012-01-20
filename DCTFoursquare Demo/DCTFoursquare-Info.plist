@@ -36,5 +36,9 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>CLIENT_ID</key>
+	<string></string>
+	<key>CLIENT_SECRET</key>
+	<string></string>
 </dict>
 </plist>

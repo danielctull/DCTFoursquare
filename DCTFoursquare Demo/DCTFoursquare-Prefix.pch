@@ -13,3 +13,6 @@
 	#import <Foundation/Foundation.h>
 	#import <CoreData/CoreData.h>
 #endif
+
+#define DCTManagedObjectAutomatedSetupLogAutomaticPrimaryKeyUse 1
+#define DCTManagedObjectAutomatedSetupLogStorageFailures 1
