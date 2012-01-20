@@ -11,16 +11,16 @@ extern const struct DCTFoursquareVenueAttributes {
 
 extern const struct DCTFoursquareVenueRelationships {
 	__unsafe_unretained NSString *categories;
-	__unsafe_unretained NSString *indexes;
 	__unsafe_unretained NSString *location;
+	__unsafe_unretained NSString *searches;
 } DCTFoursquareVenueRelationships;
 
 extern const struct DCTFoursquareVenueFetchedProperties {
 } DCTFoursquareVenueFetchedProperties;
 
 @class DCTFoursquareCategory;
-@class DCTFoursquareVenueSearchIndex;
 @class DCTFoursquareLocation;
+@class DCTFoursquareVenueSearch;
 
 
 
@@ -61,16 +61,16 @@ extern const struct DCTFoursquareVenueFetchedProperties {
 
 
 
-@property (nonatomic, strong) NSSet* indexes;
-
-- (NSMutableSet*)indexesSet;
-
-
-
-
 @property (nonatomic, strong) DCTFoursquareLocation* location;
 
 //- (BOOL)validateLocation:(id*)value_ error:(NSError**)error_;
+
+
+
+
+@property (nonatomic, strong) NSSet* searches;
+
+- (NSMutableSet*)searchesSet;
 
 
 
@@ -84,10 +84,10 @@ extern const struct DCTFoursquareVenueFetchedProperties {
 - (void)addCategoriesObject:(DCTFoursquareCategory*)value_;
 - (void)removeCategoriesObject:(DCTFoursquareCategory*)value_;
 
-- (void)addIndexes:(NSSet*)value_;
-- (void)removeIndexes:(NSSet*)value_;
-- (void)addIndexesObject:(DCTFoursquareVenueSearchIndex*)value_;
-- (void)removeIndexesObject:(DCTFoursquareVenueSearchIndex*)value_;
+- (void)addSearches:(NSSet*)value_;
+- (void)removeSearches:(NSSet*)value_;
+- (void)addSearchesObject:(DCTFoursquareVenueSearch*)value_;
+- (void)removeSearchesObject:(DCTFoursquareVenueSearch*)value_;
 
 @end
 
@@ -112,13 +112,13 @@ extern const struct DCTFoursquareVenueFetchedProperties {
 
 
 
-- (NSMutableSet*)primitiveIndexes;
-- (void)setPrimitiveIndexes:(NSMutableSet*)value;
-
-
-
 - (DCTFoursquareLocation*)primitiveLocation;
 - (void)setPrimitiveLocation:(DCTFoursquareLocation*)value;
+
+
+
+- (NSMutableSet*)primitiveSearches;
+- (void)setPrimitiveSearches:(NSMutableSet*)value;
 
 
 @end

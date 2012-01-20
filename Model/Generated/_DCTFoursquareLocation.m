@@ -5,6 +5,7 @@
 
 const struct DCTFoursquareLocationAttributes DCTFoursquareLocationAttributes = {
 	.address = @"address",
+	.city = @"city",
 	.country = @"country",
 	.crossStreet = @"crossStreet",
 	.lat = @"lat",
@@ -62,6 +63,13 @@ const struct DCTFoursquareLocationFetchedProperties DCTFoursquareLocationFetched
 
 
 @dynamic address;
+
+
+
+
+
+
+@dynamic city;
 
 
 

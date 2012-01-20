@@ -6,6 +6,7 @@
 
 extern const struct DCTFoursquareLocationAttributes {
 	__unsafe_unretained NSString *address;
+	__unsafe_unretained NSString *city;
 	__unsafe_unretained NSString *country;
 	__unsafe_unretained NSString *crossStreet;
 	__unsafe_unretained NSString *lat;
@@ -31,6 +32,7 @@ extern const struct DCTFoursquareLocationFetchedProperties {
 
 
 
+
 @interface DCTFoursquareLocationID : NSManagedObjectID {}
 @end
 
@@ -47,6 +49,14 @@ extern const struct DCTFoursquareLocationFetchedProperties {
 
 
 //- (BOOL)validateAddress:(id*)value_ error:(NSError**)error_;
+
+
+
+
+@property (nonatomic, strong) NSString *city;
+
+
+//- (BOOL)validateCity:(id*)value_ error:(NSError**)error_;
 
 
 
@@ -131,6 +141,12 @@ extern const struct DCTFoursquareLocationFetchedProperties {
 
 - (NSString*)primitiveAddress;
 - (void)setPrimitiveAddress:(NSString*)value;
+
+
+
+
+- (NSString*)primitiveCity;
+- (void)setPrimitiveCity:(NSString*)value;
 
 
 

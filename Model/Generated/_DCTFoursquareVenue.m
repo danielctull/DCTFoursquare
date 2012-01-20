@@ -10,8 +10,8 @@ const struct DCTFoursquareVenueAttributes DCTFoursquareVenueAttributes = {
 
 const struct DCTFoursquareVenueRelationships DCTFoursquareVenueRelationships = {
 	.categories = @"categories",
-	.indexes = @"indexes",
 	.location = @"location",
+	.searches = @"searches",
 };
 
 const struct DCTFoursquareVenueFetchedProperties DCTFoursquareVenueFetchedProperties = {
@@ -77,21 +77,21 @@ const struct DCTFoursquareVenueFetchedProperties DCTFoursquareVenueFetchedProper
 }
 	
 
-@dynamic indexes;
-
-	
-- (NSMutableSet*)indexesSet {
-	[self willAccessValueForKey:@"indexes"];
-  
-	NSMutableSet *result = (NSMutableSet*)[self mutableSetValueForKey:@"indexes"];
-  
-	[self didAccessValueForKey:@"indexes"];
-	return result;
-}
-	
-
 @dynamic location;
 
+	
+
+@dynamic searches;
+
+	
+- (NSMutableSet*)searchesSet {
+	[self willAccessValueForKey:@"searches"];
+  
+	NSMutableSet *result = (NSMutableSet*)[self mutableSetValueForKey:@"searches"];
+  
+	[self didAccessValueForKey:@"searches"];
+	return result;
+}
 	
 
 

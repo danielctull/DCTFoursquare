@@ -1,5 +1,5 @@
 #import "_DCTFoursquareVenueSearch.h"
-#import "NSManagedObject+DCTAutomatedSetup.h"
 
-@interface DCTFoursquareVenueSearch : _DCTFoursquareVenueSearch <DCTManagedObjectAutomatedSetup>
+@interface DCTFoursquareVenueSearch : _DCTFoursquareVenueSearch {}
+// Custom logic goes here.
 @end

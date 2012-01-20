@@ -5,16 +5,20 @@
 #import "DCTFoursquareManagedObject.h"
 
 extern const struct DCTFoursquareVenueSearchAttributes {
+	__unsafe_unretained NSString *attribute;
+	__unsafe_unretained NSString *query;
 } DCTFoursquareVenueSearchAttributes;
 
 extern const struct DCTFoursquareVenueSearchRelationships {
-	__unsafe_unretained NSString *indexes;
+	__unsafe_unretained NSString *venues;
 } DCTFoursquareVenueSearchRelationships;
 
 extern const struct DCTFoursquareVenueSearchFetchedProperties {
 } DCTFoursquareVenueSearchFetchedProperties;
 
-@class DCTFoursquareVenueSearchIndex;
+@class DCTFoursquareVenue;
+
+
 
 
 @interface DCTFoursquareVenueSearchID : NSManagedObjectID {}
@@ -30,9 +34,13 @@ extern const struct DCTFoursquareVenueSearchFetchedProperties {
 
 
 
-@property (nonatomic, strong) NSSet* indexes;
 
-- (NSMutableSet*)indexesSet;
+
+
+
+@property (nonatomic, strong) NSSet* venues;
+
+- (NSMutableSet*)venuesSet;
 
 
 
@@ -41,10 +49,10 @@ extern const struct DCTFoursquareVenueSearchFetchedProperties {
 
 @interface _DCTFoursquareVenueSearch (CoreDataGeneratedAccessors)
 
-- (void)addIndexes:(NSSet*)value_;
-- (void)removeIndexes:(NSSet*)value_;
-- (void)addIndexesObject:(DCTFoursquareVenueSearchIndex*)value_;
-- (void)removeIndexesObject:(DCTFoursquareVenueSearchIndex*)value_;
+- (void)addVenues:(NSSet*)value_;
+- (void)removeVenues:(NSSet*)value_;
+- (void)addVenuesObject:(DCTFoursquareVenue*)value_;
+- (void)removeVenuesObject:(DCTFoursquareVenue*)value_;
 
 @end
 
@@ -52,8 +60,12 @@ extern const struct DCTFoursquareVenueSearchFetchedProperties {
 
 
 
-- (NSMutableSet*)primitiveIndexes;
-- (void)setPrimitiveIndexes:(NSMutableSet*)value;
+
+
+
+
+- (NSMutableSet*)primitiveVenues;
+- (void)setPrimitiveVenues:(NSMutableSet*)value;
 
 
 @end

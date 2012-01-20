@@ -4,10 +4,12 @@
 #import "_DCTFoursquareVenueSearch.h"
 
 const struct DCTFoursquareVenueSearchAttributes DCTFoursquareVenueSearchAttributes = {
+	.attribute = @"attribute",
+	.query = @"query",
 };
 
 const struct DCTFoursquareVenueSearchRelationships DCTFoursquareVenueSearchRelationships = {
-	.indexes = @"indexes",
+	.venues = @"venues",
 };
 
 const struct DCTFoursquareVenueSearchFetchedProperties DCTFoursquareVenueSearchFetchedProperties = {
@@ -46,15 +48,19 @@ const struct DCTFoursquareVenueSearchFetchedProperties DCTFoursquareVenueSearchF
 
 
 
-@dynamic indexes;
+
+
+
+
+@dynamic venues;
 
 	
-- (NSMutableSet*)indexesSet {
-	[self willAccessValueForKey:@"indexes"];
+- (NSMutableSet*)venuesSet {
+	[self willAccessValueForKey:@"venues"];
   
-	NSMutableSet *result = (NSMutableSet*)[self mutableSetValueForKey:@"indexes"];
+	NSMutableSet *result = (NSMutableSet*)[self mutableSetValueForKey:@"venues"];
   
-	[self didAccessValueForKey:@"indexes"];
+	[self didAccessValueForKey:@"venues"];
 	return result;
 }
 	
