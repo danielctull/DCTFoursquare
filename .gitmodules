@@ -7,3 +7,12 @@
 [submodule "DCTCoreDataStack"]
 	path = DCTCoreDataStack
 	url = git://github.com/danielctull/DCTCoreDataStack.git
+[submodule "DCTFoundation"]
+	path = DCTFoundation
+	url = git://github.com/danielctull/DCTFoundation.git
+[submodule "FRCTableViewDataSources"]
+	path = FRCTableViewDataSources
+	url = git://github.com/freerangecode/FRCTableViewDataSources.git
+[submodule "DCTFoursquare"]
+	path = DCTFoursquare
+	url = file:///Users/danielctull/Dropbox/.gitbox/repos/DCTFoursquare.git
