@@ -23,11 +23,11 @@
 		24D91CC814C9961200B22297 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		24D91CCA14C9961200B22297 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		24D91CCC14C9961200B22297 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		24D91CD014C9961200B22297 /* DCTFoursquare-Info.plist */ = {isa = PBXFileReference; path = "DCTFoursquare-Info.plist"; sourceTree = "<group>"; };
+		24D91CD014C9961200B22297 /* DCTFoursquare-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DCTFoursquare-Info.plist"; sourceTree = "<group>"; };
 		24D91CD214C9961200B22297 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		24D91CD414C9961200B22297 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		24D91CD614C9961200B22297 /* DCTFoursquare-Prefix.pch */ = {isa = PBXFileReference; path = "DCTFoursquare-Prefix.pch"; sourceTree = "<group>"; };
-		24D91CD714C9961200B22297 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		24D91CD614C9961200B22297 /* DCTFoursquare-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DCTFoursquare-Prefix.pch"; sourceTree = "<group>"; };
+		24D91CD714C9961200B22297 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		24D91CD814C9961200B22297 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		24D91CDB14C9961200B22297 /* DCTFoursquare.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DCTFoursquare.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -50,7 +50,7 @@
 		24D91CB714C9961200B22297 = {
 			isa = PBXGroup;
 			children = (
-				24D91CCE14C9961200B22297 /* DCTFoursquare */,
+				24D91CCE14C9961200B22297 /* DCTFoursquare Demo */,
 				24D91CC514C9961200B22297 /* Frameworks */,
 				24D91CC314C9961200B22297 /* Products */,
 			);
@@ -75,7 +75,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		24D91CCE14C9961200B22297 /* DCTFoursquare */ = {
+		24D91CCE14C9961200B22297 /* DCTFoursquare Demo */ = {
 			isa = PBXGroup;
 			children = (
 				24D91CD714C9961200B22297 /* AppDelegate.h */,
@@ -83,7 +83,7 @@
 				24D91CDA14C9961200B22297 /* DCTFoursquare.xcdatamodeld */,
 				24D91CCF14C9961200B22297 /* Supporting Files */,
 			);
-			path = DCTFoursquare;
+			path = "DCTFoursquare Demo";
 			sourceTree = "<group>";
 		};
 		24D91CCF14C9961200B22297 /* Supporting Files */ = {
@@ -228,8 +228,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "DCTFoursquare/DCTFoursquare-Prefix.pch";
-				INFOPLIST_FILE = "DCTFoursquare/DCTFoursquare-Info.plist";
+				GCC_PREFIX_HEADER = "DCTFoursquare Demo/DCTFoursquare-Prefix.pch";
+				INFOPLIST_FILE = "DCTFoursquare Demo/DCTFoursquare-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -239,8 +239,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "DCTFoursquare/DCTFoursquare-Prefix.pch";
-				INFOPLIST_FILE = "DCTFoursquare/DCTFoursquare-Info.plist";
+				GCC_PREFIX_HEADER = "DCTFoursquare Demo/DCTFoursquare-Prefix.pch";
+				INFOPLIST_FILE = "DCTFoursquare Demo/DCTFoursquare-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
