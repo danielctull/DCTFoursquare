@@ -1,0 +1,285 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		24D91CC714C9961200B22297 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24D91CC614C9961200B22297 /* UIKit.framework */; };
+		24D91CC914C9961200B22297 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24D91CC814C9961200B22297 /* Foundation.framework */; };
+		24D91CCB14C9961200B22297 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24D91CCA14C9961200B22297 /* CoreGraphics.framework */; };
+		24D91CCD14C9961200B22297 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24D91CCC14C9961200B22297 /* CoreData.framework */; };
+		24D91CD314C9961200B22297 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 24D91CD114C9961200B22297 /* InfoPlist.strings */; };
+		24D91CD514C9961200B22297 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D91CD414C9961200B22297 /* main.m */; };
+		24D91CD914C9961200B22297 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D91CD814C9961200B22297 /* AppDelegate.m */; };
+		24D91CDC14C9961200B22297 /* DCTFoursquare.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 24D91CDA14C9961200B22297 /* DCTFoursquare.xcdatamodeld */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		24D91CC214C9961200B22297 /* DCTFoursquare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DCTFoursquare.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		24D91CC614C9961200B22297 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		24D91CC814C9961200B22297 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		24D91CCA14C9961200B22297 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		24D91CCC14C9961200B22297 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		24D91CD014C9961200B22297 /* DCTFoursquare-Info.plist */ = {isa = PBXFileReference; path = "DCTFoursquare-Info.plist"; sourceTree = "<group>"; };
+		24D91CD214C9961200B22297 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		24D91CD414C9961200B22297 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		24D91CD614C9961200B22297 /* DCTFoursquare-Prefix.pch */ = {isa = PBXFileReference; path = "DCTFoursquare-Prefix.pch"; sourceTree = "<group>"; };
+		24D91CD714C9961200B22297 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		24D91CD814C9961200B22297 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		24D91CDB14C9961200B22297 /* DCTFoursquare.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DCTFoursquare.xcdatamodel; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		24D91CBF14C9961200B22297 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24D91CC714C9961200B22297 /* UIKit.framework in Frameworks */,
+				24D91CC914C9961200B22297 /* Foundation.framework in Frameworks */,
+				24D91CCB14C9961200B22297 /* CoreGraphics.framework in Frameworks */,
+				24D91CCD14C9961200B22297 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		24D91CB714C9961200B22297 = {
+			isa = PBXGroup;
+			children = (
+				24D91CCE14C9961200B22297 /* DCTFoursquare */,
+				24D91CC514C9961200B22297 /* Frameworks */,
+				24D91CC314C9961200B22297 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		24D91CC314C9961200B22297 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				24D91CC214C9961200B22297 /* DCTFoursquare.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		24D91CC514C9961200B22297 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				24D91CC614C9961200B22297 /* UIKit.framework */,
+				24D91CC814C9961200B22297 /* Foundation.framework */,
+				24D91CCA14C9961200B22297 /* CoreGraphics.framework */,
+				24D91CCC14C9961200B22297 /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		24D91CCE14C9961200B22297 /* DCTFoursquare */ = {
+			isa = PBXGroup;
+			children = (
+				24D91CD714C9961200B22297 /* AppDelegate.h */,
+				24D91CD814C9961200B22297 /* AppDelegate.m */,
+				24D91CDA14C9961200B22297 /* DCTFoursquare.xcdatamodeld */,
+				24D91CCF14C9961200B22297 /* Supporting Files */,
+			);
+			path = DCTFoursquare;
+			sourceTree = "<group>";
+		};
+		24D91CCF14C9961200B22297 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				24D91CD014C9961200B22297 /* DCTFoursquare-Info.plist */,
+				24D91CD114C9961200B22297 /* InfoPlist.strings */,
+				24D91CD414C9961200B22297 /* main.m */,
+				24D91CD614C9961200B22297 /* DCTFoursquare-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		24D91CC114C9961200B22297 /* DCTFoursquare */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24D91CDF14C9961200B22297 /* Build configuration list for PBXNativeTarget "DCTFoursquare" */;
+			buildPhases = (
+				24D91CBE14C9961200B22297 /* Sources */,
+				24D91CBF14C9961200B22297 /* Frameworks */,
+				24D91CC014C9961200B22297 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DCTFoursquare;
+			productName = DCTFoursquare;
+			productReference = 24D91CC214C9961200B22297 /* DCTFoursquare.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		24D91CB914C9961200B22297 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "Daniel Tull Limited";
+			};
+			buildConfigurationList = 24D91CBC14C9961200B22297 /* Build configuration list for PBXProject "DCTFoursquare" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 24D91CB714C9961200B22297;
+			productRefGroup = 24D91CC314C9961200B22297 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				24D91CC114C9961200B22297 /* DCTFoursquare */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		24D91CC014C9961200B22297 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24D91CD314C9961200B22297 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		24D91CBE14C9961200B22297 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24D91CD514C9961200B22297 /* main.m in Sources */,
+				24D91CD914C9961200B22297 /* AppDelegate.m in Sources */,
+				24D91CDC14C9961200B22297 /* DCTFoursquare.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		24D91CD114C9961200B22297 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				24D91CD214C9961200B22297 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		24D91CDD14C9961200B22297 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		24D91CDE14C9961200B22297 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		24D91CE014C9961200B22297 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DCTFoursquare/DCTFoursquare-Prefix.pch";
+				INFOPLIST_FILE = "DCTFoursquare/DCTFoursquare-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		24D91CE114C9961200B22297 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DCTFoursquare/DCTFoursquare-Prefix.pch";
+				INFOPLIST_FILE = "DCTFoursquare/DCTFoursquare-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		24D91CBC14C9961200B22297 /* Build configuration list for PBXProject "DCTFoursquare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24D91CDD14C9961200B22297 /* Debug */,
+				24D91CDE14C9961200B22297 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24D91CDF14C9961200B22297 /* Build configuration list for PBXNativeTarget "DCTFoursquare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24D91CE014C9961200B22297 /* Debug */,
+				24D91CE114C9961200B22297 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		24D91CDA14C9961200B22297 /* DCTFoursquare.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				24D91CDB14C9961200B22297 /* DCTFoursquare.xcdatamodel */,
+			);
+			currentVersion = 24D91CDB14C9961200B22297 /* DCTFoursquare.xcdatamodel */;
+			path = DCTFoursquare.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 24D91CB914C9961200B22297 /* Project object */;
+}
