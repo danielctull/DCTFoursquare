@@ -4,7 +4,6 @@
 #import "_DCTFoursquareVenueSearch.h"
 
 const struct DCTFoursquareVenueSearchAttributes DCTFoursquareVenueSearchAttributes = {
-	.attribute = @"attribute",
 	.query = @"query",
 };
 
@@ -46,6 +45,9 @@ const struct DCTFoursquareVenueSearchFetchedProperties DCTFoursquareVenueSearchF
 }
 
 
+
+
+@dynamic query;
 
 
 

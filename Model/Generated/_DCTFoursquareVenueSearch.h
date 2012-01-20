@@ -5,7 +5,6 @@
 #import "DCTFoursquareManagedObject.h"
 
 extern const struct DCTFoursquareVenueSearchAttributes {
-	__unsafe_unretained NSString *attribute;
 	__unsafe_unretained NSString *query;
 } DCTFoursquareVenueSearchAttributes;
 
@@ -17,7 +16,6 @@ extern const struct DCTFoursquareVenueSearchFetchedProperties {
 } DCTFoursquareVenueSearchFetchedProperties;
 
 @class DCTFoursquareVenue;
-
 
 
 
@@ -33,6 +31,10 @@ extern const struct DCTFoursquareVenueSearchFetchedProperties {
 
 
 
+@property (nonatomic, strong) NSString *query;
+
+
+//- (BOOL)validateQuery:(id*)value_ error:(NSError**)error_;
 
 
 
@@ -59,6 +61,8 @@ extern const struct DCTFoursquareVenueSearchFetchedProperties {
 @interface _DCTFoursquareVenueSearch (CoreDataGeneratedPrimitiveAccessors)
 
 
+- (NSString*)primitiveQuery;
+- (void)setPrimitiveQuery:(NSString*)value;
 
 
 

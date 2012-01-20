@@ -26,7 +26,11 @@
         <relationship name="venues" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="DCTFoursquareVenue" inverseName="location" inverseEntity="DCTFoursquareVenue" syncable="YES"/>
     </entity>
     <entity name="DCTFoursquareVenue" representedClassName="DCTFoursquareVenue" syncable="YES">
+        <attribute name="formattedPhone" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="phone" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="twitter" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="urlString" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="venueID" attributeType="String" syncable="YES"/>
         <relationship name="categories" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="DCTFoursquareCategory" inverseName="venues" inverseEntity="DCTFoursquareCategory" syncable="YES"/>
         <relationship name="location" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="DCTFoursquareLocation" inverseName="venues" inverseEntity="DCTFoursquareLocation" syncable="YES"/>
@@ -37,10 +41,10 @@
         <relationship name="venues" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="DCTFoursquareVenue" inverseName="searches" inverseEntity="DCTFoursquareVenue" syncable="YES"/>
     </entity>
     <elements>
-        <element name="DCTFoursquareCategory" positionX="189" positionY="18" width="146" height="150"/>
+        <element name="DCTFoursquareCategory" positionX="144" positionY="18" width="146" height="150"/>
         <element name="DCTFoursquareIcon" positionX="414" positionY="-18" width="128" height="90"/>
-        <element name="DCTFoursquareLocation" positionX="189" positionY="198" width="146" height="180"/>
-        <element name="DCTFoursquareVenue" positionX="414" positionY="168" width="128" height="120"/>
-        <element name="DCTFoursquareVenueSearch" positionX="594" positionY="213" width="164" height="75"/>
+        <element name="DCTFoursquareLocation" positionX="144" positionY="198" width="146" height="180"/>
+        <element name="DCTFoursquareVenue" positionX="414" positionY="168" width="128" height="180"/>
+        <element name="DCTFoursquareVenueSearch" positionX="945" positionY="213" width="191" height="90"/>
     </elements>
 </model>

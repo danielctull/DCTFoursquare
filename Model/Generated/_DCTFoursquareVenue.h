@@ -5,7 +5,11 @@
 #import "DCTFoursquareManagedObject.h"
 
 extern const struct DCTFoursquareVenueAttributes {
+	__unsafe_unretained NSString *formattedPhone;
 	__unsafe_unretained NSString *name;
+	__unsafe_unretained NSString *phone;
+	__unsafe_unretained NSString *twitter;
+	__unsafe_unretained NSString *urlString;
 	__unsafe_unretained NSString *venueID;
 } DCTFoursquareVenueAttributes;
 
@@ -25,6 +29,10 @@ extern const struct DCTFoursquareVenueFetchedProperties {
 
 
 
+
+
+
+
 @interface DCTFoursquareVenueID : NSManagedObjectID {}
 @end
 
@@ -37,10 +45,42 @@ extern const struct DCTFoursquareVenueFetchedProperties {
 
 
 
+@property (nonatomic, strong) NSString *formattedPhone;
+
+
+//- (BOOL)validateFormattedPhone:(id*)value_ error:(NSError**)error_;
+
+
+
+
 @property (nonatomic, strong) NSString *name;
 
 
 //- (BOOL)validateName:(id*)value_ error:(NSError**)error_;
+
+
+
+
+@property (nonatomic, strong) NSString *phone;
+
+
+//- (BOOL)validatePhone:(id*)value_ error:(NSError**)error_;
+
+
+
+
+@property (nonatomic, strong) NSString *twitter;
+
+
+//- (BOOL)validateTwitter:(id*)value_ error:(NSError**)error_;
+
+
+
+
+@property (nonatomic, strong) NSString *urlString;
+
+
+//- (BOOL)validateUrlString:(id*)value_ error:(NSError**)error_;
 
 
 
@@ -94,8 +134,32 @@ extern const struct DCTFoursquareVenueFetchedProperties {
 @interface _DCTFoursquareVenue (CoreDataGeneratedPrimitiveAccessors)
 
 
+- (NSString*)primitiveFormattedPhone;
+- (void)setPrimitiveFormattedPhone:(NSString*)value;
+
+
+
+
 - (NSString*)primitiveName;
 - (void)setPrimitiveName:(NSString*)value;
+
+
+
+
+- (NSString*)primitivePhone;
+- (void)setPrimitivePhone:(NSString*)value;
+
+
+
+
+- (NSString*)primitiveTwitter;
+- (void)setPrimitiveTwitter:(NSString*)value;
+
+
+
+
+- (NSString*)primitiveUrlString;
+- (void)setPrimitiveUrlString:(NSString*)value;
 
 
 

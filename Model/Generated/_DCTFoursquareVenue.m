@@ -4,7 +4,11 @@
 #import "_DCTFoursquareVenue.h"
 
 const struct DCTFoursquareVenueAttributes DCTFoursquareVenueAttributes = {
+	.formattedPhone = @"formattedPhone",
 	.name = @"name",
+	.phone = @"phone",
+	.twitter = @"twitter",
+	.urlString = @"urlString",
 	.venueID = @"venueID",
 };
 
@@ -50,7 +54,35 @@ const struct DCTFoursquareVenueFetchedProperties DCTFoursquareVenueFetchedProper
 
 
 
+@dynamic formattedPhone;
+
+
+
+
+
+
 @dynamic name;
+
+
+
+
+
+
+@dynamic phone;
+
+
+
+
+
+
+@dynamic twitter;
+
+
+
+
+
+
+@dynamic urlString;
 
 
 
