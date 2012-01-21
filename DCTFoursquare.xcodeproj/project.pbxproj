@@ -91,6 +91,8 @@
 		24D91E1914C9D3E400B22297 /* _DCTFoursquareLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D91E0814C9D3E400B22297 /* _DCTFoursquareLocation.m */; };
 		24D91E1B14C9D3E400B22297 /* _DCTFoursquareVenue.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D91E0C14C9D3E400B22297 /* _DCTFoursquareVenue.m */; };
 		24D91E1C14C9D3E400B22297 /* _DCTFoursquareVenueSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D91E0E14C9D3E400B22297 /* _DCTFoursquareVenueSearch.m */; };
+		24D91E2614CAD7B100B22297 /* VenueTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D91E2514CAD7B100B22297 /* VenueTableViewCell.m */; };
+		24D91E2814CAD7C000B22297 /* VenueTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24D91E2714CAD7BF00B22297 /* VenueTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -256,6 +258,9 @@
 		24D91E0E14C9D3E400B22297 /* _DCTFoursquareVenueSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _DCTFoursquareVenueSearch.m; sourceTree = "<group>"; };
 		24D91E1D14CAD0E300B22297 /* DCTFoursquare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTFoursquare.h; sourceTree = "<group>"; };
 		24D91E2114CAD35F00B22297 /* DCTCoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTCoreData.h; sourceTree = "<group>"; };
+		24D91E2414CAD7B100B22297 /* VenueTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VenueTableViewCell.h; sourceTree = "<group>"; };
+		24D91E2514CAD7B100B22297 /* VenueTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VenueTableViewCell.m; sourceTree = "<group>"; };
+		24D91E2714CAD7BF00B22297 /* VenueTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VenueTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -322,6 +327,9 @@
 				24D91DBA14C9C2A100B22297 /* VenueSearchViewController.h */,
 				24D91DBB14C9C2A100B22297 /* VenueSearchViewController.m */,
 				24D91DBC14C9C2A100B22297 /* VenueSearchViewController.xib */,
+				24D91E2414CAD7B100B22297 /* VenueTableViewCell.h */,
+				24D91E2514CAD7B100B22297 /* VenueTableViewCell.m */,
+				24D91E2714CAD7BF00B22297 /* VenueTableViewCell.xib */,
 			);
 			path = "DCTFoursquare Demo";
 			sourceTree = "<group>";
@@ -630,6 +638,7 @@
 				24D91DEA14C9C82C00B22297 /* FRCCollapsableSectionTableViewDataSourceDisclosureIndicatorHighlighted.png in Resources */,
 				24D91DEB14C9C82C00B22297 /* FRCCollapsableSectionTableViewDataSourceDisclosureIndicatorHighlighted@2x.png in Resources */,
 				24D91DEC14C9C82C00B22297 /* Readme.textile in Resources */,
+				24D91E2814CAD7C000B22297 /* VenueTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -710,6 +719,7 @@
 				24D91E1914C9D3E400B22297 /* _DCTFoursquareLocation.m in Sources */,
 				24D91E1B14C9D3E400B22297 /* _DCTFoursquareVenue.m in Sources */,
 				24D91E1C14C9D3E400B22297 /* _DCTFoursquareVenueSearch.m in Sources */,
+				24D91E2614CAD7B100B22297 /* VenueTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

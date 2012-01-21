@@ -11,6 +11,7 @@
 #import "FRCFetchedResultsTableViewDataSource.h"
 #import "DCTFoursquareVenue.h"
 #import "DCTFoursquareVenueSearch.h"
+#import "VenueTableViewCell.h"
 
 @implementation VenueSearchViewController {
 	__strong NSManagedObjectContext *managedObjectContext;
@@ -34,6 +35,7 @@
 	[super viewDidLoad];
 	
 	dataSource = [FRCFetchedResultsTableViewDataSource new];
+	dataSource.cellClass = [VenueTableViewCell class];
 	self.tableView.dataSource = dataSource;
 	dataSource.tableView = self.tableView;
 }
