@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
 
-@interface VenueSearchViewController : UIViewController <UISearchBarDelegate>
+@interface VenueSearchViewController : UIViewController <UISearchBarDelegate, MKMapViewDelegate>
 
 - (id)initWithManagedObjectContext:(NSManagedObjectContext *)managedObjectContext;
 

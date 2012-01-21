@@ -254,6 +254,8 @@
 		24D91E0C14C9D3E400B22297 /* _DCTFoursquareVenue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _DCTFoursquareVenue.m; sourceTree = "<group>"; };
 		24D91E0D14C9D3E400B22297 /* _DCTFoursquareVenueSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _DCTFoursquareVenueSearch.h; sourceTree = "<group>"; };
 		24D91E0E14C9D3E400B22297 /* _DCTFoursquareVenueSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _DCTFoursquareVenueSearch.m; sourceTree = "<group>"; };
+		24D91E1D14CAD0E300B22297 /* DCTFoursquare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTFoursquare.h; sourceTree = "<group>"; };
+		24D91E2114CAD35F00B22297 /* DCTCoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCTCoreData.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -338,6 +340,7 @@
 		24D91CE214C996AD00B22297 /* DCTFoursquare */ = {
 			isa = PBXGroup;
 			children = (
+				24D91E1D14CAD0E300B22297 /* DCTFoursquare.h */,
 				24D91D8B14C9A76F00B22297 /* Connections */,
 				24D91DF114C9D3E400B22297 /* Model */,
 			);
@@ -384,6 +387,7 @@
 		24D91D0214C9972700B22297 /* DCTCoreData */ = {
 			isa = PBXGroup;
 			children = (
+				24D91E2114CAD35F00B22297 /* DCTCoreData.h */,
 				24D91D0314C9972700B22297 /* Asynchronous */,
 				24D91D0814C9972700B22297 /* Automated Setup */,
 				24D91D1314C9972700B22297 /* NSArray+DCTSortDescriptors.h */,

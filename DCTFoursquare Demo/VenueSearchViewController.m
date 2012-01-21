@@ -10,47 +10,47 @@
 #import "DCTFoursquareVenuesSearchConnectionController.h"
 #import "FRCFetchedResultsTableViewDataSource.h"
 #import "DCTFoursquareVenue.h"
+#import "DCTFoursquareVenueSearch.h"
 
 @implementation VenueSearchViewController {
-	__strong NSManagedObjectContext *context;
+	__strong NSManagedObjectContext *managedObjectContext;
 	__strong FRCFetchedResultsTableViewDataSource *dataSource;
+	__strong DCTFoursquareVenueSearch *search;
 }
 
 @synthesize mapView;
 @synthesize tableView;
 
-- (id)initWithManagedObjectContext:(NSManagedObjectContext *)managedObjectContext {
+- (id)initWithManagedObjectContext:(NSManagedObjectContext *)context {
 	
 	if (!(self = [self initWithNibName:NSStringFromClass([self class]) bundle:nil])) return nil;
 	
-	context = managedObjectContext;
+	managedObjectContext = context;
 	
 	return self;	
 }
 
-- (void)searchBarSearchButtonClicked:(UISearchBar *)sb {
-	
-	DCTFoursquareVenuesSearchConnectionController *cc = [[DCTFoursquareVenuesSearchConnectionController alloc] initWithManagedObjectContext:context];
-	cc.query = sb.text;
-	cc.coordinate = self.mapView.centerCoordinate;
-	
-	NSBundle *bundle = [NSBundle mainBundle];	
-	cc.clientID = [bundle objectForInfoDictionaryKey:@"CLIENT_ID"];
-	cc.clientSecret = [bundle objectForInfoDictionaryKey:@"CLIENT_SECRET"];
-	[cc connect];
-	[sb resignFirstResponder];
-}
-
-
-
 - (void)viewDidLoad {
 	[super viewDidLoad];
-	/*
-	[NSFetchRequest 	
 	
 	dataSource = [FRCFetchedResultsTableViewDataSource new];
-	dataSource.managedObjectContext = context;
-	dataSource.fetchRequest =*/
+	self.tableView.dataSource = dataSource;
+	dataSource.tableView = self.tableView;
+}
+
+- (void)mapView:(MKMapView *)mv regionDidChangeAnimated:(BOOL)animated {
+	dataSource.fetchedResultsController = [search fetchedResultsControllerForVenuesWithinRegion:self.mapView.region];
+}
+
+- (void)searchBarSearchButtonClicked:(UISearchBar *)sb {
+	
+	search = [DCTFoursquareVenueSearch venueSearchWithQuery:sb.text 
+										   centerCoordinate:self.mapView.centerCoordinate
+									 inManagedObjectContext:managedObjectContext];
+	
+	dataSource.fetchedResultsController = [search fetchedResultsControllerForVenuesWithinRegion:self.mapView.region];
+	
+	[sb resignFirstResponder];
 }
 
 @end
