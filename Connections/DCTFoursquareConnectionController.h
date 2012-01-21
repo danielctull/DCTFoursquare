@@ -11,6 +11,10 @@
 
 @interface DCTFoursquareConnectionController : DCTRESTConnectionController
 
+
++ (void)setClientID:(NSString *)clientID secret:(NSString *)clientSecret;
+
+
 - (id)initWithManagedObjectContext:(NSManagedObjectContext *)managedObjectContext;
 @property (nonatomic, readonly) NSManagedObjectContext *managedObjectContext;
 

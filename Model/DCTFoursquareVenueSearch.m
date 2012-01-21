@@ -21,11 +21,7 @@
 	DCTFoursquareVenuesSearchConnectionController *cc = [[DCTFoursquareVenuesSearchConnectionController alloc] initWithManagedObjectContext:managedObjectContext];
 	cc.query = query;
 	cc.coordinate = coordinate;
-	
-	NSBundle *bundle = [NSBundle mainBundle];	
-	cc.clientID = [bundle objectForInfoDictionaryKey:@"CLIENT_ID"];
-	cc.clientSecret = [bundle objectForInfoDictionaryKey:@"CLIENT_SECRET"];
-	
+		
 	__weak DCTFoursquareVenuesSearchConnectionController *weakCC = cc;
 	[cc addFinishHandler:^{
 		if ([weakCC.returnedObject isKindOfClass:[NSArray class]]) {

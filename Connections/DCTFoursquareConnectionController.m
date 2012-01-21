@@ -13,6 +13,9 @@
 #import "NSManagedObjectContext+DCTExtras.h"
 #import <objc/runtime.h>
 
+static NSString *sharedClientID = nil;
+static NSString *sharedClientSecret = nil;
+
 @interface DCTFoursquareConnectionController ()
 @property (nonatomic, readonly) NSManagedObjectContext *backgroundManagedObjectContext;
 @end
@@ -24,11 +27,21 @@
 @synthesize clientID;
 @synthesize clientSecret;
 
++ (void)setClientID:(NSString *)clientID secret:(NSString *)clientSecret {
+	static dispatch_once_t sharedToken;
+	dispatch_once(&sharedToken, ^{
+		sharedClientID = clientID;
+		sharedClientSecret = clientSecret;
+	});
+}
+
 - (id)initWithManagedObjectContext:(NSManagedObjectContext *)context {
 	
 	if (!(self = [super init])) return nil;
 	
 	managedObjectContext = context;
+	self.clientID = sharedClientID;
+	self.clientSecret = sharedClientSecret;
 	
 	return self;	
 }
