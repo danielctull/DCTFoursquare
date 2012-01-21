@@ -6,6 +6,7 @@
 //  Copyright (c) 2012 Daniel Tull Limited. All rights reserved.
 //
 
+#import "DCTFoursquare.h"
 #import "DCTFoursquareConnectionController.h"
 #import "NSManagedObjectContext+DCTCoreDataStack.h"
 #import "NSJSONSerialization+DCTBlocks.h"
