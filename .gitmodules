@@ -15,4 +15,4 @@
 	url = git://github.com/freerangecode/FRCTableViewDataSources.git
 [submodule "DCTFoursquare"]
 	path = DCTFoursquare
-	url = file:///Users/danielctull/Dropbox/.gitbox/repos/DCTFoursquare.git
+	url = git://github.com/danielctull/DCTFoursquare.git
